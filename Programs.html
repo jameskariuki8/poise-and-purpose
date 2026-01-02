@@ -1,0 +1,1075 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Programs - Poise & Purpose Kenya</title>
+    <meta name="description"
+        content="Explore our programs at Poise & Purpose Kenya - Leadership development, mentorship, education support, and more for young women and girls.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://poiseandpurposekenya.org/Programs.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://poiseandpurposekenya.org/Programs.html">
+    <meta property="og:title" content="Our Programs - Poise & Purpose Kenya">
+    <meta property="og:description"
+        content="Explore our programs at Poise & Purpose Kenya - Leadership development, mentorship, and education support.">
+    <meta property="og:image" content="https://poiseandpurposekenya.org/images/logo.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://poiseandpurposekenya.org/Programs.html">
+    <meta property="twitter:title" content="Our Programs - Poise & Purpose Kenya">
+    <meta property="twitter:description"
+        content="Explore our programs at Poise & Purpose Kenya - Leadership development, mentorship, and education support.">
+    <meta property="twitter:image" content="https://poiseandpurposekenya.org/images/logo.jpg">
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #0f0a05;
+            --secondary-bg: #1a1308;
+            --accent-light: #e6c34f;
+            --accent-dark: #b8941f;
+            --text-primary: #f8f4e9;
+            --text-secondary: #d9d1b8;
+            --card-bg: rgba(40, 32, 16, 0.7);
+            --border-color: #5a4a21;
+            --gradient-1: linear-gradient(135deg, #8a2be2 0%, #FFD700 100%);
+            --gradient-2: linear-gradient(135deg, #a855f7 0%, #ffed99 100%);
+            --gold-glow: rgba(138, 43, 226, 0.3);
+            --purple: #8a2be2;
+            --purple-light: #a855f7;
+            --purple-dark: #6b21a8;
+            --purple-gold: linear-gradient(135deg, #8a2be2, #FFD700);
+            --gold-purple: linear-gradient(135deg, #FFD700, #8a2be2);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            background: var(--primary-bg);
+            color: var(--text-primary);
+            font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            padding-top: 45px;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(247, 239, 138, 0.05) 0%, transparent 20%);
+        }
+
+        main {
+            min-height: 60vh;
+            padding: clamp(16px, 4vw, 24px);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 8rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: clamp(2.8rem, 6vw, 4.5rem);
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-1);
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--text-primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--text-primary);
+            border-radius: 2px;
+            box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+        }
+
+        h3 {
+            font-size: 1.3rem !important;
+            color: var(--text-primary);
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            max-width: 100vw;
+            margin: 0 auto 8rem;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .hero-glow {
+            position: absolute;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            filter: blur(60px);
+            opacity: 0.3;
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        .hero-glow:nth-child(1) {
+            width: 300px;
+            height: 300px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .hero-glow:nth-child(2) {
+            width: 400px;
+            height: 400px;
+            top: 40%;
+            right: 10%;
+            animation-delay: 2s;
+        }
+
+        .hero-glow:nth-child(3) {
+            width: 250px;
+            height: 250px;
+            bottom: 10%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        .floating-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .shape {
+            position: absolute;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 10px;
+            animation: float 15s infinite linear;
+        }
+
+        .shape:nth-child(1) {
+            width: 40px;
+            height: 40px;
+            top: 20%;
+            left: 15%;
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            top: 60%;
+            left: 80%;
+            animation-delay: 3s;
+        }
+
+        .shape:nth-child(3) {
+            width: 30px;
+            height: 30px;
+            top: 80%;
+            left: 10%;
+            animation-delay: 6s;
+        }
+
+        .shape:nth-child(4) {
+            width: 50px;
+            height: 50px;
+            top: 30%;
+            left: 85%;
+            animation-delay: 9s;
+        }
+
+        .shape:nth-child(5) {
+            width: 35px;
+            height: 35px;
+            top: 70%;
+            left: 70%;
+            animation-delay: 12s;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero-content h1 {
+            color: var(--text-primary);
+        }
+
+        .hero-section p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 2.5rem;
+            color: var(--text-primary);
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #D4AF37, #FFD700);
+            border: 2px solid #D4AF37;
+            color: #000;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6);
+            background: linear-gradient(45deg, #B8860B, #D4AF37);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(212, 175, 55, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.3;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            33% {
+                transform: translateY(-20px) rotate(120deg);
+            }
+
+            66% {
+                transform: translateY(10px) rotate(240deg);
+            }
+
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+
+        /* Programs Section */
+        .programs-overview {
+            margin-bottom: 8rem;
+        }
+
+        .programs-intro {
+            text-align: center;
+            margin: 0 auto 4rem;
+        }
+
+        .programs-intro h2 {
+            margin-bottom: 3rem;
+        }
+
+        /* Journey Section */
+        .journey-section {
+            margin-bottom: 8rem;
+        }
+
+        .journey-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .journey-items {
+            position: relative;
+            z-index: 2;
+        }
+
+        .journey-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease;
+        }
+
+        .journey-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .journey-item:nth-child(even) {
+            flex-direction: row-reverse;
+            transform: translateX(50px);
+        }
+
+        .journey-item:nth-child(even).visible {
+            transform: translateX(0);
+        }
+
+        .journey-content {
+            flex: 1;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .journey-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 2rem;
+            flex-shrink: 0;
+            z-index: 3;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+
+        .journey-icon svg {
+            width: 40px;
+            height: 40px;
+            color: var(--primary-bg);
+        }
+
+        .journey-item:nth-child(even) .journey-icon {
+            order: -1;
+        }
+
+        .journey-content h3 {
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .journey-content h3::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--gradient-1);
+            border-radius: 2px;
+        }
+
+        .journey-content p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .journey-features {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .journey-features li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .journey-features li::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            margin-right: 10px;
+        }
+
+        /* Categories Section */
+        .categories-section {
+            margin-bottom: 8rem;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .category-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            backdrop-filter: blur(10px);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .category-header {
+            padding: 2rem;
+            background: rgba(212, 175, 55, 0.1);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .category-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .category-icon svg {
+            width: 30px;
+            height: 30px;
+            color: var(--primary-bg);
+        }
+
+        .category-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .category-title {
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .category-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--gradient-1);
+            border-radius: 2px;
+        }
+
+        .category-description {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .category-cta {
+            margin-top: auto;
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--text-secondary);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .category-cta:hover {
+            background: rgba(212, 175, 55, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.2);
+        }
+
+        /* Impact Section */
+        .impact-section {
+            background: var(--secondary-bg);
+            padding: 4rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            margin-bottom: 8rem;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .impact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-1);
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+        }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .impact-stat {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* scrollbar */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--secondary-bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--text-primary);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-light);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 6rem 1rem 4rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .journey-item {
+                flex-direction: row !important;
+                transform: translateX(-50px) !important;
+            }
+
+            .journey-item.visible {
+                transform: translateX(0) !important;
+            }
+
+            .journey-icon {
+                margin: 0 1rem 0 0;
+                width: 60px;
+                height: 60px;
+            }
+
+            .journey-icon svg {
+                width: 30px;
+                height: 30px;
+            }
+
+            .journey-item:nth-child(even) .journey-icon {
+                order: 0;
+            }
+
+            .impact-section {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="site-header"></div>
+    <main id="main" tabindex="-1">
+
+        <!--Hero Section-->
+        <section class="hero-section visible">
+            <div class="hero-background">
+                <div class="hero-glow"></div>
+                <div class="hero-glow"></div>
+                <div class="hero-glow"></div>
+                <div class="floating-shapes">
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1>Our Programs</h1>
+                <p class="hero-description">Discover how our comprehensive initiatives empower young women and girls
+                    through transformative leadership development, education, and community engagement.</p>
+                <div class="hero-cta">
+                    <a href="#program-journey" class="btn btn-primary">Explore Our Approach</a>
+                    <a href="contact.html" class="btn btn-secondary">Partner With Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Overview -->
+        <section class="programs-overview" id="programs-overview">
+            <div class="programs-intro">
+                <h2>Our Holistic Approach</h2>
+                <p>At Poise & Purpose Kenya, we believe in nurturing the complete individual. Our programs are
+                    thoughtfully designed to address the unique challenges faced by young women and girls, providing
+                    them with a comprehensive toolkit for success in all aspects of life.</p>
+            </div>
+        </section>
+
+        <!-- Journey -->
+        <section class="journey-section" id="program-journey">
+            <div class="journey-container">
+                <div class="journey-items">
+                    <!-- Foundation Building -->
+                    <div class="journey-item">
+                        <div class="journey-content">
+                            <h3>Foundation Building</h3>
+                            <p>We start by establishing a strong foundation of self-awareness, confidence, and essential
+                                life skills that form the bedrock of personal and professional growth.</p>
+                            <ul class="journey-features">
+                                <li>Self-discovery workshops</li>
+                                <li>Confidence building exercises</li>
+                                <li>Essential communication skills</li>
+                                <li>Goal setting and planning</li>
+                            </ul>
+                        </div>
+                        <div class="journey-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Skill Development -->
+                    <div class="journey-item">
+                        <div class="journey-content">
+                            <h3>Skill Development</h3>
+                            <p>Participants acquire practical skills in leadership, critical thinking, and
+                                problem-solving through hands-on workshops and real-world applications.</p>
+                            <ul class="journey-features">
+                                <li>Leadership and public speaking</li>
+                                <li>Critical thinking exercises</li>
+                                <li>Project management fundamentals</li>
+                                <li>Team collaboration activities</li>
+                            </ul>
+                        </div>
+                        <div class="journey-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Mentorship & Guidance -->
+                    <div class="journey-item">
+                        <div class="journey-content">
+                            <h3>Mentorship & Guidance</h3>
+                            <p>Each participant is paired with an experienced mentor who provides personalized guidance,
+                                career advice, and ongoing support throughout their journey.</p>
+                            <ul class="journey-features">
+                                <li>One-on-one mentorship sessions</li>
+                                <li>Career guidance and planning</li>
+                                <li>Professional network building</li>
+                                <li>Personal development coaching</li>
+                            </ul>
+                        </div>
+                        <div class="journey-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Community Impact -->
+                    <div class="journey-item">
+                        <div class="journey-content">
+                            <h3>Community Impact</h3>
+                            <p>Participants apply their skills to create positive change in their communities through
+                                advocacy projects, entrepreneurship, and leadership initiatives.</p>
+                            <ul class="journey-features">
+                                <li>Community advocacy projects</li>
+                                <li>Entrepreneurship initiatives</li>
+                                <li>Leadership in action programs</li>
+                                <li>Sustainable development projects</li>
+                            </ul>
+                        </div>
+                        <div class="journey-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9a9 9 0 00-9 9m9-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Categories -->
+        <section class="categories-section">
+            <h2 style="text-align: center; margin-bottom: 4rem;">Our Programs</h2>
+            <div class="categories-grid">
+                <!-- Leadership & Governance -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Leadership & Governance</h3>
+                    </div>
+                    <div class="category-content">
+                        <p class="category-description">Develop the skills and confidence needed to become effective
+                            leaders in various spheres of society, from community organizations to national governance.
+                        </p>
+                        <a href="#" class="category-cta">Explore Program</a>
+                    </div>
+                </div>
+
+                <!-- Education & Skills -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                                <path
+                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Education & Skills</h3>
+                    </div>
+                    <div class="category-content">
+                        <p class="category-description">Access educational support, scholarships, and skills training
+                            that open doors to academic achievement and professional success.</p>
+                        <a href="#" class="category-cta">Explore Program</a>
+                    </div>
+                </div>
+
+                <!-- Mentorship Programs -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Mentorship Programs</h3>
+                    </div>
+                    <div class="category-content">
+                        <p class="category-description">Prioritize physical, mental, and emotional well-being through
+                            comprehensive health education and wellness programs.</p>
+                        <a href="#" class="category-cta">Explore Program</a>
+                    </div>
+                </div>
+                <!-- Advocacy & Awareness Campaigns -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 10v4a1 1 0 001 1h3l7 5V4l-7 5H4a1 1 0 00-1 1z"></path>
+                                <path d="M14 9v6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Advocacy & Awareness Campaigns</h3>
+                    </div>
+                    <div class="category-content">
+                        <p class="category-description">
+                            Drive impactful change through initiatives that raise awareness, educate, and advocate for
+                            meaningful causes.
+                        </p>
+                        <a href="#" class="category-cta">Explore Program</a>
+                    </div>
+                </div>
+
+                <!-- Community Empowerment-->
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 00-3-3.87"></path>
+                                <path d="M8 21v-2a4 4 0 013-3.87"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Community Empowerment</h3>
+                    </div>
+                    <div class="category-content">
+                        <p class="category-description">
+                            Equip individuals and communities with resources and opportunities to foster self-reliance
+                            and collective growth.
+                        </p>
+                        <a href="#" class="category-cta">Explore Program</a>
+                    </div>
+                </div>
+
+        </section>
+        <!-- Impact Section -->
+        <section class="impact-section">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Our Impact</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Through our comprehensive programs,
+                we've created meaningful change in the lives of young women and girls across Kenya.</p>
+
+            <div class="impact-grid">
+                <div class="impact-stat">
+                    <span class="stat-number" data-count="1500">0</span>
+                    <span class="stat-label">Young Women Empowered</span>
+                </div>
+                <div class="impact-stat">
+                    <span class="stat-number" data-count="85">0</span>
+                    <span class="stat-label">% Education Completion Rate</span>
+                </div>
+                <div class="impact-stat">
+                    <span class="stat-number" data-count="42">0</span>
+                    <span class="stat-label">Community Projects Led</span>
+                </div>
+                <div class="impact-stat">
+                    <span class="stat-number" data-count="200">0</span>
+                    <span class="stat-label">Mentorship Partnerships</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <div id="site-footer"></div>
+
+    <script>
+        // Scroll animation
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+
+                    // Animate counting numbers
+                    if (entry.target.classList.contains('impact-stat')) {
+                        const numberElement = entry.target.querySelector('.stat-number');
+                        const targetCount = parseInt(numberElement.getAttribute('data-count'));
+                        animateCount(numberElement, targetCount);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section:not(.hero-section)').forEach(section => {
+            observer.observe(section);
+        });
+
+        // journey items
+        document.querySelectorAll('.journey-item').forEach(item => {
+            observer.observe(item);
+        });
+
+        // impact stats
+        document.querySelectorAll('.impact-stat').forEach(stat => {
+            observer.observe(stat);
+        });
+
+        // Hero section bg
+        document.addEventListener('mousemove', (e) => {
+            const hero = document.querySelector('.hero-section');
+            const heroGlows = document.querySelectorAll('.hero-glow');
+            const shapes = document.querySelectorAll('.shape');
+
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+
+            // Move glows slightly with mouse movement
+            heroGlows.forEach((glow, index) => {
+                const speed = (index + 1) * 0.5;
+                const xMove = (x - 0.5) * speed * 20;
+                const yMove = (y - 0.5) * speed * 20;
+
+                glow.style.transform = `translate(${xMove}px, ${yMove}px)`;
+            });
+
+            // Move shapes with mouse
+            shapes.forEach((shape, index) => {
+                const speed = (index % 3 + 1) * 0.3;
+                const xMove = (x - 0.5) * speed * 30;
+                const yMove = (y - 0.5) * speed * 30;
+
+                shape.style.transform = `translate(${xMove}px, ${yMove}px)`;
+            });
+        });
+
+        // Animate stats
+        function animateCount(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    clearInterval(timer);
+                    current = target;
+                }
+                element.textContent = Math.floor(current);
+            }, 20);
+        }
+
+        function injectHTML(target, html) {
+            target.innerHTML = html;
+            const scripts = Array.from(target.querySelectorAll('script'));
+            scripts.forEach((old) => {
+                try {
+                    const fresh = document.createElement('script');
+                    Array.from(old.attributes).forEach(attr => fresh.setAttribute(attr.name, attr.value));
+                    if (old.src) {
+                        fresh.src = old.src;
+                        fresh.async = false;
+                    } else {
+                        fresh.text = old.textContent || '';
+                    }
+                    const parent = old.parentNode || target;
+                    parent.replaceChild(fresh, old);
+                } catch (e) {
+                    console.error('Script injection failed:', e);
+                }
+            });
+        }
+
+        Promise.all([
+            fetch('components/header.html').then(r => r.text()),
+            fetch('components/footer.html').then(r => r.text())
+        ]).then(([headerHTML, footerHTML]) => {
+            injectHTML(document.getElementById('site-header'), headerHTML);
+            injectHTML(document.getElementById('site-footer'), footerHTML);
+        }).catch(err => {
+            console.error('Failed to load components:', err);
+        });
+    </script>
+</body>
+
+</html>

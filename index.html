@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poise & Purpose Kenya - Empowering Young Women Leaders</title>
+    <meta name="description"
+        content="Poise & Purpose Kenya empowers young women and girls to rise as bold leaders through mentorship, education, and community support. Join our movement for gender equality.">
+    <meta name="keywords"
+        content="Poise & Purpose Kenya, Playfair Display, Young Women Leaders, Women Empowerment Kenya, Mentorship for Girls, Gender Equality Kenya, NGO Kenya, Leadership Training">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://poiseandpurposekenya.org/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://poiseandpurposekenya.org/">
+    <meta property="og:title" content="Poise & Purpose Kenya - Empowering Young Women Leaders">
+    <meta property="og:description"
+        content="Empowering young women and girls to lead with confidence, creativity and compassion.">
+    <meta property="og:image" content="https://poiseandpurposekenya.org/images/logo.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://poiseandpurposekenya.org/">
+    <meta property="twitter:title" content="Poise & Purpose Kenya - Empowering Young Women Leaders">
+    <meta property="twitter:description"
+        content="Empowering young women and girls to lead with confidence, creativity and compassion.">
+    <meta property="twitter:image" content="https://poiseandpurposekenya.org/images/logo.jpg">
+
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <meta name="google-site-verification" content="wdnQYVU17X211rqlBz9c_FCP-Fx36fgYYxcbQVCoOvM" />
+    <style>
+        :root {
+            --primary: #8a2be2;
+            --secondary: #00bfff;
+            --accent: #ff69b4;
+            --dark: #0f0f1e;
+            --darker: #070711;
+            --light: #f8f8ff;
+            --glass: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.12);
+            --glow: 0 0 15px rgba(138, 43, 226, 0.5);
+            --purple: #8a2be2;
+            --purple-light: #a855f7;
+            --purple-dark: #6b21a8;
+            --purple-gold: linear-gradient(135deg, #8a2be2, #FFD700);
+            --gold-purple: linear-gradient(135deg, #FFD700, #8a2be2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--darker);
+            color: var(--light);
+            overflow-x: hidden;
+            line-height: 1.6;
+            padding-top: 78px;
+        }
+
+        /* Hero Section removed */
+
+        /* New Hero Section (from TEST.HTML) */
+        .hero-section {
+            position: relative;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            background: #000;
+            overflow: hidden;
+        }
+
+        /* Video Background */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg,
+                    rgba(0, 0, 0, 0.8) 0%,
+                    rgba(120, 53, 15, 0.3) 50%,
+                    rgba(0, 0, 0, 0.8) 100%);
+            z-index: 2;
+        }
+
+        /* Container */
+        .hero-container {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        /* Left Side - Text Content */
+        .text-content {
+            color: #fff;
+        }
+
+        .heading {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            background: var(--purple-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: slideInLeft 1s ease-out 0.5s forwards;
+        }
+
+        .paragraph {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            line-height: 1.6;
+            color: #e5e5e5;
+            margin-bottom: 32px;
+            font-weight: 300;
+            opacity: 0;
+            transform: translateX(-30px);
+            animation: slideInLeft 1s ease-out 0.8s forwards;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, #D4AF37, #FFD700);
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out 1.1s forwards;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.5);
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        /* Right Side - Image */
+        .image-content {
+            position: relative;
+            opacity: 0;
+            transform: scale(0.9);
+            animation: scaleIn 1s ease-out 0.7s forwards;
+        }
+
+        .image-wrapper {
+            position: relative;
+            transition: transform 0.3s ease;
+            -webkit-mask-image: radial-gradient(ellipse at center, black 70%, transparent 100%);
+            mask-image: radial-gradient(ellipse at center, black 70%, transparent 100%);
+        }
+
+        .image-wrapper:hover {
+            transform: translateY(-5px);
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-glow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Floating Elements */
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .floating-element {
+            position: absolute;
+            background: linear-gradient(135deg, #D4AF37, #FFD700);
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .element-1 {
+            width: 80px;
+            height: 80px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .element-2 {
+            width: 40px;
+            height: 40px;
+            top: 60%;
+            left: 85%;
+            animation-delay: 2s;
+        }
+
+        .element-3 {
+            width: 60px;
+            height: 60px;
+            bottom: 20%;
+            left: 15%;
+            animation-delay: 4s;
+        }
+
+        /* Animations */
+        @keyframes slideInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 2s forwards;
+        }
+
+        .scroll-arrow {
+            width: 2px;
+            height: 30px;
+            background: linear-gradient(to bottom, #D4AF37, transparent);
+            margin: 0 auto;
+            position: relative;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-arrow::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            border-right: 2px solid #D4AF37;
+            border-bottom: 2px solid #D4AF37;
+            transform: translateX(-50%) rotate(45deg);
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Hide hero image on mobile */
+        @media (max-width: 768px) {
+            .image-content {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-section {
+                background-image: url('images/hero.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                min-height: 60vh;
+                position: relative;
+            }
+
+            .hero-section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(45deg,
+                        rgba(0, 0, 0, 0.6) 0%,
+                        rgba(138, 43, 226, 0.2) 50%,
+                        rgba(0, 0, 0, 0.6) 100%);
+                z-index: 1;
+            }
+
+            .hero-container {
+                position: relative;
+                z-index: 2;
+            }
+
+            .video-background {
+                display: none;
+            }
+        }
+
+        .btn {
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #FFD700;
+            color: #000;
+            border: none;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(212, 175, 55, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #8a2be2;
+            border: 2px solid #8a2be2;
+            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(138, 43, 226, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(138, 43, 226, 0.3);
+        }
+
+
+
+        /* removed african-pattern */
+
+        /* Sections Common Styles */
+        section {
+            padding: 3rem 2rem;
+            position: relative;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            background: var(--purple-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--purple-gold);
+            border-radius: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* About Section - Dark Theme Starts Here */
+        .about {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            backdrop-filter: blur(10px);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #F0E68C;
+        }
+
+        .text-card {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(0, 0, 0, 0.6));
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(138, 43, 226, 0.1);
+            backdrop-filter: blur(6px);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .text-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--purple-gold);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .text-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(138, 43, 226, 0.2), 0 0 30px rgba(255, 215, 0, 0.15);
+            border-color: rgba(138, 43, 226, 0.5);
+        }
+
+        .text-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .about-icons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .icon-card {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(0, 0, 0, 0.6));
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            border-radius: 20px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            color: #F0E68C;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .icon-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--purple-gold);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .icon-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(138, 43, 226, 0.2), 0 0 30px rgba(255, 215, 0, 0.15);
+            border-color: rgba(138, 43, 226, 0.5);
+        }
+
+        .icon-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .icon-card i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: var(--purple-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Programs Section - Dark Theme */
+        .programs {
+            background: var(--theme-bg-secondary);
+            color: #f0f0f0;
+        }
+
+        /* Programs Section */
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .program-card {
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            position: relative;
+            overflow: hidden;
+            color: #F0E68C;
+        }
+
+        .program-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .program-card:hover {
+            transform: translateY(-10px) rotateX(5deg);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
+        }
+
+        .program-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .program-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #FFD700;
+        }
+
+        .impact-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            color: #FFD700;
+            display: block;
+            line-height: 1;
+        }
+
+        .stat-label {
+            color: #FFEC8B;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-top: 0.5rem;
+        }
+
+        /* Carousel Section - Dark Theme */
+        .carousel {
+            background: var(--theme-bg-secondary);
+            backdrop-filter: blur(10px);
+            color: #f0f0f0;
+        }
+
+        .testimonial-carousel {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .testimonial {
+            min-width: 100%;
+            padding: 3rem;
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            text-align: center;
+            color: #f0f0f0;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .carousel-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .carousel-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-dot.active {
+            background: var(--secondary);
+            transform: scale(1.2);
+        }
+
+        /* Get Involved Section - Dark Theme */
+        .get-involved {
+            background: var(--theme-bg-secondary);
+            color: #f0f0f0;
+        }
+
+        /* Events Section - Dark Theme */
+        .events {
+            background: var(--theme-bg-secondary);
+            color: #f0f0f0;
+        }
+
+        /* Events Section */
+        .events-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .events-timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary), var(--secondary));
+        }
+
+        .event-card {
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            width: calc(50% - 2rem);
+            position: relative;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+            color: #f0f0f0;
+        }
+
+        .event-card:nth-child(odd) {
+            margin-left: auto;
+        }
+
+        .event-card:nth-child(even) {
+            margin-right: auto;
+        }
+
+        .event-card::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--secondary);
+            transform: translateY(-50%);
+        }
+
+        .event-card:nth-child(odd)::before {
+            left: -40px;
+        }
+
+        .event-card:nth-child(even)::before {
+            right: -40px;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--glow);
+        }
+
+        .event-date {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        /* Animations cleanup */
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .events-timeline::before {
+                left: 30px;
+            }
+
+            .event-card {
+                width: calc(100% - 60px);
+                margin-left: 60px !important;
+                margin-right: 0 !important;
+            }
+
+            .event-card:nth-child(odd)::before,
+            .event-card:nth-child(even)::before {
+                left: -40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .programs-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="site-header"></div>
+    <!-- Hero Section (from TEST.HTML) -->
+    <section class="hero-section">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-group-of-african-women-dancing-traditionally-44363-large.mp4"
+                    type="video/mp4">
+                <img src="https://images.unsplash.com/photo-1516627145497-ae69578cf5d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                    alt="African women empowerment">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <div class="floating-elements">
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="text-content">
+                    <h1 class="heading">Igniting the Power of Young Women</h1>
+                    <p class="paragraph">At Poise & Purpose Kenya, we ignite the power of young women and girls to rise
+                        as bold leaders.</p>
+                    <a href="#get-involved" class="cta-button">Join Our Movement</a>
+                </div>
+                <div class="image-content">
+                    <div class="image-wrapper">
+                        <img src="images/home-hero-group.jpg" alt="Group of young women checking phone together"
+                            class="hero-image">
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <div class="about-content">
+                <div class="about-text text-card">
+                    <p>Empowering young women to lead with confidence, creativity and compassion by providing them with
+                        the tools, support and opportunities to make lasting impact in their communities and beyond.</p>
+
+                </div>
+                <div class="about-icons">
+                    <div class="icon-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                        <p>Scholarships and learning opportunities</p>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Mentorship</h3>
+                        <p>Guidance from successful women leaders</p>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-bullhorn"></i>
+                        <h3>Advocacy</h3>
+                        <p>Championing women's rights and voices</p>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Community</h3>
+                        <p>Building supportive networks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <h2 class="section-title">Our Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3>Male Allies Program</h3>
+                    <p>"Men and women, building solutions together.”
+                        A platform that engages men as champions of gender equality. This program equips male allies
+                        with knowledge, empathy, and tools to understand challenges faced by women and to take part in
+                        creating lasting solutions.</p>
+                </div>
+                <div class="program-card">
+                    <h3>POISE TALKS</h3>
+                    <p>“Conversations that shape confidence and purpose.”
+                        A series of personal development sessions for young women, featuring mentorship,
+                        skills-building, and inspiring stories. Poise Talks equips participants with practical tools for
+                        confidence, resilience, and leadership.</p>
+                </div>
+                <div class="program-card">
+                    <h3>NEXT GEN LEADERS</h3>
+                    <p>“Igniting the future, one student at a time.”
+                        A mentorship initiative for high school students. Through career guidance, character-building,
+                        and role model sessions, Next Gen Leaders nurtures future changemakers who dare to dream big and
+                        lead with courage.</p>
+                </div>
+                <div class="program-card">
+                    <h3>CAMPUS TOWN HALLS</h3>
+                    <p>“Real voices. Real issues. Real solutions.”
+                        An open forum for university and college women to discuss pressing challenges, share
+                        experiences, and co-create solutions. These interactive town halls foster sisterhood, advocacy,
+                        and collective action for safer and more supportive campus spaces.</p>
+                </div>
+            </div>
+
+            <div class="impact-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="2500">0</span>
+                    <span class="stat-label">Girls Empowered</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="120">0</span>
+                    <span class="stat-label">Communities Reached</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="85">0</span>
+                    <span class="stat-label">Success Stories</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="15">0</span>
+                    <span class="stat-label">Programs Running</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section id="testimonials" class="carousel">
+        <div class="container">
+            <h2 class="section-title">Success Stories</h2>
+            <div class="testimonial-carousel">
+                <div class="carousel-track">
+                    <div class="testimonial">
+                        <p class="testimonial-text">"I finally found a community of young women who want more out of
+                            life purpose, discipline and sisterhood."</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">"Every session feels like a reset. I always leave feeling grounded,
+                            inspired and ready to act."</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">"Being here reminded me that I’m allowed to dream boldly and
+                            actually pursue those dreams."</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">"They don’t just talk about growth they guide you through it step by
+                            step."</p>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <div class="carousel-dot active" data-slide="0"></div>
+                    <div class="carousel-dot" data-slide="1"></div>
+                    <div class="carousel-dot" data-slide="2"></div>
+                    <div class="carousel-dot" data-slide="3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="get-involved" class="get-involved">
+        <div class="container">
+            <h2 class="section-title">Get Involved</h2>
+            <div class="about-content">
+                <div class="about-text text-card">
+                    <p>Ready to make a difference? Join our community of empowered women and help us create lasting
+                        change. Whether you want to volunteer, donate, or participate in our programs, there's a place
+                        for you.</p>
+                    <p>Together, we can build a future where every girl and woman has the opportunity to lead, succeed,
+                        and inspire others.</p>
+                </div>
+                <div class="about-icons">
+                    <div class="icon-card" style="grid-column: 1 / -1; text-align: center;">
+                        <i class="fas fa-hands-helping" style="font-size: 3rem; margin-bottom: 1.5rem;"></i>
+                        <h3>Ready to Make a Difference?</h3>
+                        <p>Discover all the ways you can get involved and help us empower young women across Kenya.</p>
+                        <a href="get-involved.html" class="btn btn-primary" style="margin-top: 1rem;">Learn How to Get
+                            Involved</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="events-timeline">
+                <div class="event-card">
+                    <div class="event-date">June 15, 2023</div>
+                    <h3 class="event-title">Women in Tech Conference</h3>
+                    <p>Annual gathering celebrating women in technology with keynote speakers, workshops, and networking
+                        opportunities.</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">July 22, 2023</div>
+                    <h3 class="event-title">Leadership Bootcamp</h3>
+                    <p>Intensive weekend program focused on developing essential leadership skills for young women aged
+                        18-25.</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">August 10, 2023</div>
+                    <h3 class="event-title">Community Impact Day</h3>
+                    <p>Join us as we give back to the community through various service projects and initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for anchor links (hero CTA)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (!href || href === '#') return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Video fallback handling
+        const heroVideo = document.querySelector('.video-background video');
+        if (heroVideo) {
+            heroVideo.addEventListener('error', function () {
+                const fallbackImage = this.querySelector('img');
+                if (fallbackImage) {
+                    this.parentElement.style.backgroundImage = `url(${fallbackImage.src})`;
+                    this.style.display = 'none';
+                    fallbackImage.style.display = 'block';
+                }
+            });
+        }
+
+        // Intersection Observer for hero animations
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.heading, .paragraph, .cta-button, .image-content').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Golden glow hover effect
+        document.querySelectorAll('.cta-button, .image-wrapper').forEach(element => {
+            element.addEventListener('mouseenter', function () {
+                this.style.filter = 'drop-shadow(0 0 20px rgba(212, 175, 55, 0.6))';
+            });
+            element.addEventListener('mouseleave', function () {
+                this.style.filter = 'none';
+            });
+        });
+        // Animated counters
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200;
+
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(() => animateCounters(), 1);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        }
+
+        // Testimonial carousel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial');
+        const dots = document.querySelectorAll('.carousel-dot');
+        const track = document.querySelector('.carousel-track');
+
+        function showSlide(n) {
+            currentSlide = (n + slides.length) % slides.length;
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[currentSlide].classList.add('active');
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showSlide(index));
+        });
+
+        // Auto-advance carousel
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 5000);
+
+        // Scroll animations
+        function checkScroll() {
+            const elements = document.querySelectorAll('.program-card, .icon-card, .event-card, .stat');
+
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (elementTop < windowHeight - 100) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Initialize elements with initial styles for animation
+        document.querySelectorAll('.program-card, .icon-card, .event-card, .stat').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(animateCounters, 1000);
+            window.addEventListener('scroll', checkScroll);
+            checkScroll();
+        });
+    </script>
+    <div id="site-footer"></div>
+    <script>
+        // Include header and footer components and execute their scripts
+        function injectHTML(target, html) {
+            target.innerHTML = html;
+            const scripts = Array.from(target.querySelectorAll('script'));
+            scripts.forEach((old) => {
+                try {
+                    const fresh = document.createElement('script');
+                    Array.from(old.attributes).forEach(attr => fresh.setAttribute(attr.name, attr.value));
+                    if (old.src) { fresh.src = old.src; fresh.async = false; } else { fresh.text = old.textContent || ''; }
+                    const parent = old.parentNode || target;
+                    parent.replaceChild(fresh, old);
+                } catch (e) { console.error('Script injection failed:', e); }
+            });
+        }
+        Promise.all([
+            fetch('components/header.html').then(r => r.text()),
+            fetch('components/footer.html').then(r => r.text())
+        ]).then(([h, f]) => {
+            injectHTML(document.getElementById('site-header'), h);
+            injectHTML(document.getElementById('site-footer'), f);
+        }).catch(err => console.error('Failed to load components:', err));
+    </script>
+</body>
+
+</html>

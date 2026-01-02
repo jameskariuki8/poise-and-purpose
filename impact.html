@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Impact - Poise & Purpose Kenya</title>
+    <meta name="description"
+        content="See the real impact Poise & Purpose Kenya is making: thousands of women empowered, businesses launched, and communities transformed.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://poiseandpurposekenya.org/impact.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://poiseandpurposekenya.org/impact.html">
+    <meta property="og:title" content="Our Impact - Poise & Purpose Kenya">
+    <meta property="og:description"
+        content="See the real impact Poise & Purpose Kenya is making: thousands of women empowered.">
+    <meta property="og:image" content="https://poiseandpurposekenya.org/images/logo.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://poiseandpurposekenya.org/impact.html">
+    <meta property="twitter:title" content="Our Impact - Poise & Purpose Kenya">
+    <meta property="twitter:description"
+        content="See the real impact Poise & Purpose Kenya is making: thousands of women empowered.">
+    <meta property="twitter:image" content="https://poiseandpurposekenya.org/images/logo.jpg">
+
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-brown: #8B4513;
+            --dark-brown: #5D4037;
+            --light-brown: #D7CCC8;
+            --gold: #FFD700;
+            --dark-gold: #B8860B;
+            --cream: #FFF8E1;
+            --dark-cream: #F5F5DC;
+        }
+
+        body {
+            background: var(--theme-bg-color, #000);
+            color: var(--theme-text-color, #fff);
+            overflow-x: hidden;
+            padding-top: 78px;
+        }
+
+        /* Navbar and Footer styles - to be inherited */
+        .navbar,
+        .footer {
+            display: none;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 20px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(255, 215, 0, 0.05));
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 900px;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: #FFD700;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+            color: #e6d4ff;
+            font-weight: 400;
+            max-width: 700px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #D4AF37, #FFD700);
+            color: #000;
+            border: none;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(212, 175, 55, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #FFD700;
+            border: 2px solid #D4AF37;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(212, 175, 55, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #FFD700;
+            z-index: 3;
+        }
+
+        .logo span {
+            color: #fff;
+        }
+
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .logo {
+                font-size: 1.4rem;
+                top: 20px;
+                left: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+
+
+
+        /* Stats Section - Dark Theme */
+        .stats-section {
+            background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+            padding: 80px 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .stat-card {
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            border-top: 5px solid #D4AF37;
+            backdrop-filter: blur(5px);
+            color: #D4AF37;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, #D4AF37, #FFD700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            color: #FFEC8B;
+            font-weight: 600;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #FFD700;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #D4AF37, #FFD700);
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+
+        /* Stories Section - Dark Theme */
+        .stories-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+        }
+
+        .stories-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .story-card {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 30px;
+            color: #F0E68C;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .story-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+        }
+
+        .story-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .story-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #D4AF37, #FFD700);
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: #000;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .story-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #FFD700;
+        }
+
+        .story-location {
+            color: var(--light-brown);
+            font-size: 0.9rem;
+        }
+
+        .story-quote {
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 20px;
+            border-left: 3px solid #D4AF37;
+        }
+
+        .story-impact {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .impact-before,
+        .impact-after {
+            text-align: center;
+            flex: 1;
+        }
+
+        .impact-label {
+            font-size: 0.8rem;
+            color: var(--light-brown);
+            margin-bottom: 5px;
+        }
+
+        .impact-value {
+            font-weight: 600;
+            color: #FFD700;
+        }
+
+        /* Gallery Section - Dark Theme */
+        .gallery-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            height: 250px;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #FFEC8B;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+
+        /* Timeline Section - Dark Theme */
+        .timeline-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+        }
+
+        .timeline {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background: linear-gradient(to bottom, #D4AF37, #FFD700);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+            width: 50%;
+            padding: 0 40px;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-content {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #F0E68C;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.2);
+        }
+
+        .timeline-year {
+            font-weight: 700;
+            color: #FFD700;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            top: 20px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            background: #D4AF37;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -10px;
+        }
+
+        /* Partners Section - Dark Theme */
+        .partners-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+        }
+
+        .partners-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 40px;
+        }
+
+        .partner-logo {
+            height: 80px;
+            width: 150px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #FFEC8B;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .partner-logo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.2);
+        }
+
+        /* CTA Section - Dark Theme */
+        .cta-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            text-align: center;
+        }
+
+        .cta-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #F0E68C;
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #D4AF37, #FFD700);
+            color: #000;
+            border: none;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(255, 215, 0, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #FFD700;
+            border: 2px solid #D4AF37;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Simple logo text (from test hero) */
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #FFD700;
+            z-index: 3;
+        }
+
+        .logo span {
+            color: #fff;
+        }
+
+        .contact-section {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--dark-brown) 0%, var(--primary-brown) 100%);
+            text-align: center;
+        }
+
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: var(--cream);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            color: var(--cream);
+        }
+
+        .contact-item strong {
+            color: var(--gold);
+        }
+
+        /* Animations */
+        @keyframes float3D {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+            }
+
+            25% {
+                transform: translateY(-10px) rotateX(5deg) rotateY(2deg);
+            }
+
+            50% {
+                transform: translateY(-15px) rotateX(0deg) rotateY(-2deg);
+            }
+
+            75% {
+                transform: translateY(-5px) rotateX(-3deg) rotateY(1deg);
+            }
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow:
+                    0 0 20px rgba(255, 215, 0, 0.5),
+                    0 0 40px rgba(255, 215, 0, 0.3),
+                    0 0 60px rgba(255, 215, 0, 0.2);
+            }
+
+            100% {
+                text-shadow:
+                    0 0 30px rgba(255, 215, 0, 0.8),
+                    0 0 60px rgba(255, 215, 0, 0.5),
+                    0 0 90px rgba(255, 215, 0, 0.3);
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow:
+                    0 8px 25px rgba(255, 215, 0, 0.4),
+                    0 0 0 2px rgba(255, 215, 0, 0.2),
+                    inset 0 2px 0 rgba(255, 255, 255, 0.3);
+            }
+
+            50% {
+                transform: scale(1.02);
+                box-shadow:
+                    0 10px 30px rgba(255, 215, 0, 0.5),
+                    0 0 0 3px rgba(255, 215, 0, 0.3),
+                    inset 0 3px 0 rgba(255, 255, 255, 0.4);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .timeline:before {
+                left: 30px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 20px;
+            }
+
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+
+            .timeline-dot {
+                left: 20px !important;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="site-header"></div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Our impact is real and you can be part of the next chapter.</h1>
+            <p class="subtitle">Empowering young women across Kenya to become leaders, entrepreneurs, and changemakers
+                in their communities.</p>
+
+            <div class="buttons">
+                <button class="btn btn-primary">Join Our Movement</button>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <h2 class="section-title">Our Impact in Numbers</h2>
+        <div class="stats-container">
+            <div class="stat-card">
+                <span class="stat-number" data-count="5200">200</span>
+                <div class="stat-label">Women Trained</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-count="1400">42</span>
+                <div class="stat-label">Businesses Launched</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-count="230">200</span>
+                <div class="stat-label">Communities Impacted</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-count="87">87</span>
+                <div class="stat-label">Employment Success Rate</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section class="stories-section">
+        <h2 class="section-title" style="color: white;">Success Stories</h2>
+        <div class="stories-container">
+            <div class="story-card">
+                <p class="story-quote">"I finally found a community of young women who want more out of life purpose,
+                    discipline and sisterhood."</p>
+            </div>
+            <div class="story-card">
+                <p class="story-quote">"Every session feels like a reset. I always leave feeling grounded, inspired and
+                    ready to act."</p>
+            </div>
+            <div class="story-card">
+                <p class="story-quote">"Being here reminded me that I’m allowed to dream boldly and actually pursue
+                    those dreams."</p>
+            </div>
+            <div class="story-card">
+                <p class="story-quote">"They don’t just talk about growth they guide you through it step by step."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h2 class="section-title">Moments of Impact</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img class="gallery-img" src="images/event1.jpeg" alt="Leadership Training Workshop" />
+                <div class="gallery-caption">Leadership Training Workshop</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="images/event2.jpeg" alt="Business Grant Ceremony" />
+                <div class="gallery-caption">Business Grant Ceremony</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="images/event3.jpeg" alt="Community Outreach Program" />
+                <div class="gallery-caption">Community Outreach Program</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="images/event4.jpeg" alt="Mentorship Session" />
+                <div class="gallery-caption">Mentorship Session</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="images/event5.jpeg" alt="Graduation Celebration" />
+                <div class="gallery-caption">Graduation Celebration</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="images/event5.jpeg" alt="Women's Entrepreneurship Fair" />
+                <div class="gallery-caption">Women's Entrepreneurship Fair</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <h2 class="section-title" style="color: white;">Our Journey</h2>
+        <div style="max-width: 800px; margin: 0 auto 3rem; text-align: center;">
+            <p style="font-size: 1.25rem; color: #F0E68C; margin-bottom: 2rem; line-height: 1.8;">
+                Poise & Purpose Kenya began in 2024 with a simple but bold conviction:
+                to raise a generation of grounded, confident and purpose-driven young women.
+            </p>
+            <p style="font-size: 1.25rem; color: #F0E68C; line-height: 1.8;">
+                What started as small gatherings and conversations has grown into a movement shaping leadership,
+                identity and impact across Kenya.
+            </p>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2024 — The Beginning</div>
+                    <p>We laid the foundation for a community that empowers young women to grow with clarity, confidence
+                        and character.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">January 2025 — Our First Leadership Training Conference</div>
+                    <p>In partnership with Kisii University, we hosted our inaugural leadership training conference,
+                        reaching over 500 young women.</p>
+                    <br>
+                    <p>This milestone cemented our vision to build spaces where young women can learn, lead and thrive.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">May 2025 — Launch of the Male Allies Program</div>
+                    <p>Understanding that gender equity requires partnership, we launched the Male Allies Program.</p>
+                    <br>
+                    <p>Since then, over 100 young men have joined us in supporting the mission—standing for equality,
+                        mutual respect and a redefined culture of leadership.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">August 2025 — Gen Next Mentorship Program</div>
+                    <p>As part of our sustainability pillar, we introduced the Gen Next Mentorship Program for teenage
+                        girls.</p>
+                    <br>
+                    <p>This initiative ensures younger girls grow up equipped with mindset, values and mentorship that
+                        prepares them for purposeful adulthood.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="max-width: 800px; margin: 3rem auto 0; text-align: center;">
+            <h3 style="font-size: 2rem; color: #FFD700; margin-bottom: 1.5rem;">And We Are Still Becoming…</h3>
+            <p style="font-size: 1.25rem; color: #F0E68C; line-height: 1.8;">
+                Our journey is still unfolding, grounded in purpose and driven by a growing community of women (and
+                allies) who believe in building a better, bolder and more intentional generation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <h2 class="section-title">Supported By</h2>
+        <div class="partners-container">
+            <div class="partner-logo">Global Women Fund</div>
+            <div class="partner-logo">Kenya Empowerment Initiative</div>
+            <div class="partner-logo">African Development Trust</div>
+            <div class="partner-logo">Women Forward Alliance</div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-title">Join Our Movement</h2>
+            <p class="cta-text">Be part of the change. Your support helps us empower more young women to become leaders
+                in their communities.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary">Donate to Expand Our Impact</button>
+                <button class="btn btn-secondary">Become a Volunteer</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be inherited -->
+    <div class="footer"></div>
+
+
+
+    <!-- Contact Section -->
+
+
+    <div id="site-footer"></div>
+    <script>
+        // Include header and footer components and execute their scripts
+        function injectHTML(target, html) {
+            target.innerHTML = html;
+            const scripts = Array.from(target.querySelectorAll('script'));
+            scripts.forEach((old) => {
+                try {
+                    const fresh = document.createElement('script');
+                    Array.from(old.attributes).forEach(attr => fresh.setAttribute(attr.name, attr.value));
+                    if (old.src) { fresh.src = old.src; fresh.async = false; } else { fresh.text = old.textContent || ''; }
+                    const parent = old.parentNode || target;
+                    parent.replaceChild(fresh, old);
+                } catch (e) { console.error('Script injection failed:', e); }
+            });
+        }
+        Promise.all([
+            fetch('components/header.html').then(r => r.text()),
+            fetch('components/footer.html').then(r => r.text())
+        ]).then(([h, f]) => {
+            injectHTML(document.getElementById('site-header'), h);
+            injectHTML(document.getElementById('site-footer'), f);
+        }).catch(err => console.error('Failed to load components:', err));
+    </script>
+
+</body>
+
+</html>

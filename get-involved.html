@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - Poise & Purpose Kenya</title>
+    <meta name="description"
+        content="Join Poise & Purpose Kenya to make a difference. Volunteer, donate, or partner with us to empower young women and girls.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://poiseandpurposekenya.org/get-involved.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://poiseandpurposekenya.org/get-involved.html">
+    <meta property="og:title" content="Get Involved - Poise & Purpose Kenya">
+    <meta property="og:description"
+        content="Join Poise & Purpose Kenya to make a difference. Volunteer, donate, or partner with us.">
+    <meta property="og:image" content="https://poiseandpurposekenya.org/images/logo.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://poiseandpurposekenya.org/get-involved.html">
+    <meta property="twitter:title" content="Get Involved - Poise & Purpose Kenya">
+    <meta property="twitter:description"
+        content="Join Poise & Purpose Kenya to make a difference. Volunteer, donate, or partner with us.">
+    <meta property="twitter:image" content="https://poiseandpurposekenya.org/images/logo.jpg">
+
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #8a2be2;
+            --secondary: #00bfff;
+            --accent: #ff69b4;
+            --dark: #0f0f1e;
+            --darker: #070711;
+            --light: #f8f8ff;
+            --glass: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.12);
+            --gold: #FFD700;
+            --gold2: #D4AF37;
+            --purple: #8a2be2;
+            --purple-light: #a855f7;
+            --purple-dark: #6b21a8;
+            --purple-gold: linear-gradient(135deg, #8a2be2, #FFD700);
+            --gold-purple: linear-gradient(135deg, #FFD700, #8a2be2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--darker);
+            color: var(--light);
+            line-height: 1.7;
+            padding-top: 78px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+
+        section {
+            padding: 4.5rem 0;
+            position: relative;
+            scroll-margin-top: 110px;
+        }
+
+        .title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            background: var(--purple-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+
+        .title::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--purple-gold);
+            border-radius: 2px;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 4rem 0 2rem;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+        }
+
+        .hero .lead {
+            max-width: 840px;
+            margin: .75rem auto 0;
+            text-align: center;
+            color: #e6d4ff;
+        }
+
+        /* Cards */
+        .card {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(0, 0, 0, 0.6));
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .3), 0 0 20px rgba(138, 43, 226, .1);
+            transform-style: preserve-3d;
+            opacity: 1;
+            /* visible immediately */
+            transform: none;
+            transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--purple-gold);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .card.is-visible {
+            /* kept for safety, but no-op now */
+        }
+
+        .card:hover {
+            transform: translateZ(20px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(138, 43, 226, .2), 0 0 30px rgba(255, 215, 0, .15);
+            border-color: rgba(138, 43, 226, 0.5);
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .grid-4 {
+            display: grid;
+            gap: 1.25rem;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            perspective: 1000px;
+            perspective-origin: 50% 40%;
+        }
+
+        /* CTAs */
+        .cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .75rem;
+            margin-top: 1rem;
+            justify-content: center;
+        }
+
+        .btn-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: .8rem 1.5rem;
+            border-radius: 999px;
+            text-decoration: none;
+            cursor: pointer;
+            color: #fff;
+            background: var(--purple-gold);
+            border: 1px solid rgba(138, 43, 226, .45);
+            transition: transform .2s ease, box-shadow .25s ease, background .25s ease;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-cta:hover::before {
+            left: 100%;
+        }
+
+        .btn-cta:hover,
+        .btn-cta:focus-visible {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(138, 43, 226, .3), 0 0 20px rgba(255, 215, 0, .2);
+            outline: none;
+        }
+
+        .btn-ghost {
+            color: #fff;
+            background: var(--purple-gold);
+            border: 1px solid rgba(138, 43, 226, .45);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-ghost::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-ghost:hover::before {
+            left: 100%;
+        }
+
+        .btn-ghost:hover {
+            background: linear-gradient(135deg, #B8860B, #D4AF37);
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(138, 43, 226, .3), 0 0 20px rgba(255, 215, 0, .2);
+        }
+
+        /* Staggered animation delays */
+        .grid-4 .card:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        .grid-4 .card:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+
+        .grid-4 .card:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+
+        .grid-4 .card:nth-child(4) {
+            transition-delay: 0.4s;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .grid-4 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .grid-4 {
+                grid-template-columns: 1fr;
+            }
+
+            .title {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            .card {
+                transition: none;
+                transform: none !important;
+                opacity: 1 !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="site-header"></div>
+
+    <main id="main" tabindex="-1">
+        <section class="hero">
+            <div class="container">
+                <h1 class="title">Get Involved</h1>
+                <p class="lead">Ready to make a difference? Join our community of empowered women and help us create
+                    lasting change. Whether you want to volunteer, donate, or participate in our programs, there's a
+                    place for you.</p>
+            </div>
+        </section>
+
+        <section id="involvement-options" aria-labelledby="involvement-title">
+            <div class="container">
+                <h2 id="involvement-title" class="title">Ways to Get Involved</h2>
+                <div class="grid-4">
+                    <article class="card" aria-labelledby="volunteer-h">
+                        <h3 id="volunteer-h"
+                            style="background: var(--purple-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.4rem; margin-bottom: 1rem;">
+                            Volunteer</h3>
+                        <p style="color:#e6d4ff;">Join as a mentor or supporter to guide and inspire girls and young
+                            women.</p>
+                        <div class="cta-row">
+                            <a class="btn-cta" href="#volunteer" aria-label="Volunteer sign-up form">Sign Up to
+                                Volunteer</a>
+                        </div>
+                    </article>
+                    <article class="card" aria-labelledby="partner-h">
+                        <h3 id="partner-h"
+                            style="background: var(--purple-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.4rem; margin-bottom: 1rem;">
+                            Partner With Us</h3>
+                        <p style="color:#e6d4ff;">Organizations and donors can collaborate to scale our programs and
+                            impact.</p>
+                        <div class="cta-row">
+                            <a class="btn-cta btn-ghost"
+                                href="mailto:partnerships@poisepurpose.org?subject=Partnership%20Inquiry"
+                                aria-label="Email partnerships">Contact Partnerships</a>
+                        </div>
+                    </article>
+                    <article class="card" aria-labelledby="donate-h">
+                        <h3 id="donate-h"
+                            style="background: var(--purple-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.4rem; margin-bottom: 1rem;">
+                            Donate</h3>
+                        <p style="color:#e6d4ff;">Fuel scholarships, mentorship, and community programs with a secure
+                            contribution.</p>
+                        <div class="cta-row">
+                            <a class="btn-cta" href="https://donate.poisepurpose.org" target="_blank" rel="noopener"
+                                aria-label="Secure donation link">Donate Securely</a>
+                        </div>
+                    </article>
+                    <article class="card" aria-labelledby="community-h">
+                        <h3 id="community-h"
+                            style="background: var(--purple-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.4rem; margin-bottom: 1rem;">
+                            Join Our Community</h3>
+                        <p style="color:#e6d4ff;">Connect via WhatsApp or sign up for our newsletter to stay updated.
+                        </p>
+                        <div class="cta-row">
+                            <a class="btn-cta btn-ghost" href="https://wa.me/" target="_blank" rel="noopener"
+                                aria-label="Join WhatsApp community">Join WhatsApp</a>
+                            <a class="btn-cta" href="#newsletter" aria-label="Newsletter sign-up">Subscribe to
+                                Newsletter</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script>
+        function injectHTML(target, html) {
+            target.innerHTML = html;
+            const scripts = Array.from(target.querySelectorAll('script'));
+            scripts.forEach((old) => {
+                try {
+                    const fresh = document.createElement('script');
+                    Array.from(old.attributes).forEach(attr => fresh.setAttribute(attr.name, attr.value));
+                    if (old.src) { fresh.src = old.src; fresh.async = false; } else { fresh.text = old.textContent || ''; }
+                    const parent = old.parentNode || target;
+                    parent.replaceChild(fresh, old);
+                } catch (e) { console.error('Script injection failed:', e); }
+            });
+        }
+        Promise.all([
+            fetch('components/header.html').then(r => r.text()),
+            fetch('components/footer.html').then(r => r.text())
+        ]).then(([h, f]) => {
+            injectHTML(document.getElementById('site-header'), h);
+            injectHTML(document.getElementById('site-footer'), f);
+        }).catch(err => console.error('Failed to load components:', err));
+
+        // 3D scroll animation for cards (scroll-linked subtle zoom/tilt)
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = Array.from(document.querySelectorAll('#involvement-options .card'));
+            if (cards.length === 0) return;
+
+            // Make cards visible immediately for better perceived performance
+            cards.forEach(c => c.classList.add('is-visible'));
+
+            function updateTransforms() {
+                const vh = window.innerHeight;
+                const centerY = vh * 0.55; // a touch below center feels nicer
+                for (const card of cards) {
+                    const rect = card.getBoundingClientRect();
+                    // progress: 0 at bottom edge entering, 1 near center line
+                    const mid = rect.top + rect.height / 2;
+                    const dist = Math.abs(mid - centerY);
+                    const norm = Math.max(0, 1 - dist / (vh * 0.9)); // clamp 0..1
+
+                    // Map to transforms: deeper Z and tilt when far; settle when near center
+                    const z = -120 + norm * 120; // -120 → 0
+                    const y = 24 - norm * 24;     // 24px → 0
+                    const rx = 8 - norm * 8;      // 8deg → 0
+                    const scale = 0.92 + norm * 0.08; // .92 → 1
+
+                    card.style.transform = `translateY(${y}px) translateZ(${z}px) rotateX(${rx}deg) scale(${scale})`;
+                    card.style.opacity = String(0.2 + norm * 0.8);
+                }
+                requestAnimationFrameQueued = false;
+            }
+
+            let requestAnimationFrameQueued = false;
+            function onScroll() {
+                if (!requestAnimationFrameQueued) {
+                    requestAnimationFrameQueued = true;
+                    requestAnimationFrame(updateTransforms);
+                }
+            }
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('resize', onScroll);
+            // initial
+            onScroll();
+        });
+    </script>
+</body>
+
+</html>

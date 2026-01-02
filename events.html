@@ -1,0 +1,1225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Events - Poise &amp; Purpose Kenya</title>
+	<meta name="description"
+		content="Upcoming and past events from Poise &amp; Purpose Kenya - Join us in empowering youth across Kenya.">
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://poiseandpurposekenya.org/events.html">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://poiseandpurposekenya.org/events.html">
+	<meta property="og:title" content="Events - Poise & Purpose Kenya">
+	<meta property="og:description" content="Upcoming and past events from Poise & Purpose Kenya.">
+	<meta property="og:image" content="https://poiseandpurposekenya.org/images/logo.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://poiseandpurposekenya.org/events.html">
+	<meta property="twitter:title" content="Events - Poise & Purpose Kenya">
+	<meta property="twitter:description" content="Upcoming and past events from Poise & Purpose Kenya.">
+	<meta property="twitter:image" content="https://poiseandpurposekenya.org/images/logo.jpg">
+	<link rel="icon" href="images/logo.jpg" type="image/jpeg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--bg-primary: #0b0f1e;
+			--bg-secondary: rgba(255, 255, 255, .03);
+			--text-primary: #eaf0ff;
+			--text-secondary: rgba(234, 240, 255, .8);
+			--border-color: rgba(138, 43, 226, .3);
+			--shadow-color: rgba(0, 0, 0, .4);
+			--purple: #8a2be2;
+			--purple-light: #a855f7;
+			--purple-dark: #6b21a8;
+			--purple-gold: linear-gradient(135deg, #8a2be2, #FFD700);
+			--gold-purple: linear-gradient(135deg, #FFD700, #8a2be2);
+		}
+
+		@media (prefers-color-scheme: light) {
+			:root {
+				--bg-primary: #ffffff;
+				--bg-secondary: rgba(0, 0, 0, .05);
+				--text-primary: #1e293b;
+				--text-secondary: #475569;
+				--border-color: rgba(138, 43, 226, .3);
+				--shadow-color: rgba(0, 0, 0, .15);
+			}
+
+			.section-title {
+				color: var(--purple);
+			}
+
+			.section-title::after {
+				background: var(--purple-gold);
+			}
+
+			.events-timeline::before {
+				background: var(--purple-gold);
+			}
+
+			.event-card::before {
+				background: var(--purple);
+				border-color: #ffffff;
+				box-shadow: 0 0 25px rgba(138, 43, 226, .4);
+			}
+
+			.event-date {
+				color: var(--purple);
+			}
+
+			.event-status.upcoming {
+				background: rgba(138, 43, 226, .15);
+				color: var(--purple);
+				border-color: rgba(138, 43, 226, .3);
+			}
+
+			.register-btn {
+				background: var(--purple-gold);
+				color: #ffffff;
+				box-shadow: 0 3px 12px rgba(138, 43, 226, .3);
+			}
+
+			.register-btn:hover {
+				box-shadow: 0 6px 20px rgba(138, 43, 226, .4);
+			}
+
+			.event-visual {
+				background: var(--purple-gold);
+				color: #ffffff;
+				box-shadow: 0 6px 18px rgba(138, 43, 226, .4);
+			}
+
+			.filter-tab.active,
+			.filter-tab:hover {
+				background: var(--purple-gold);
+				border-color: rgba(138, 43, 226, .5);
+				color: #fff;
+			}
+
+			.hero {
+				background: linear-gradient(135deg, rgba(138, 43, 226, .08), rgba(255, 215, 0, .06)), var(--bg-secondary);
+				border-color: rgba(138, 43, 226, .2);
+			}
+
+			.hero::before {
+				background: radial-gradient(circle at 30% 20%, rgba(138, 43, 226, .1) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(255, 215, 0, .08) 0%, transparent 50%);
+			}
+
+			.event-card {
+				background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(255, 255, 255, 0.9));
+				border-color: rgba(138, 43, 226, 0.3);
+			}
+
+			.event-card h3 {
+				background: var(--purple-gold);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+
+			.event-date {
+				color: var(--purple);
+			}
+		}
+
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			background: var(--bg-primary);
+			color: var(--text-primary);
+			font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+			transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+		body {
+			padding-top: clamp(60px, 10vw, 78px);
+		}
+
+		main {
+			min-height: 60vh;
+			padding: clamp(16px, 4vw, 24px);
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.hero {
+			position: relative;
+			overflow: hidden;
+			border: 1px solid var(--border-color);
+			border-radius: clamp(12px, 2vw, 20px);
+			padding: clamp(32px, 6vw, 56px) clamp(20px, 4vw, 24px);
+			margin-top: 16px;
+			background: linear-gradient(135deg, rgba(251, 191, 36, .12), rgba(155, 92, 246, .08)), var(--bg-secondary);
+			box-shadow: 0 20px 70px var(--shadow-color), inset 0 1px 0 rgba(255, 255, 255, .1);
+			backdrop-filter: blur(10px);
+			transition: all 0.3s ease;
+		}
+
+		.hero::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: radial-gradient(circle at 30% 20%, rgba(251, 191, 36, .15) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(155, 92, 246, .1) 0%, transparent 50%);
+			pointer-events: none;
+		}
+
+		.hero h1 {
+			margin: 0 0 16px 0;
+			font-size: clamp(28px, 6vw, 48px);
+			font-weight: 700;
+			position: relative;
+			z-index: 1;
+			background: var(--purple-gold);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+
+		.hero p {
+			margin: 0;
+			color: var(--text-secondary);
+			max-width: 65ch;
+			font-size: clamp(15px, 2.5vw, 17px);
+			position: relative;
+			z-index: 1;
+			transition: color 0.3s ease;
+		}
+
+		.section-title {
+			font-size: clamp(22px, 4vw, 28px);
+			margin: clamp(40px, 6vw, 56px) 0 clamp(20px, 3vw, 28px) 0;
+			background: var(--purple-gold);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			font-weight: 600;
+			text-align: center;
+			position: relative;
+		}
+
+		.section-title::after {
+			content: '';
+			position: absolute;
+			bottom: -8px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 60px;
+			height: 3px;
+			background: var(--purple-gold);
+			border-radius: 2px;
+		}
+
+		.events-timeline {
+			position: relative;
+			max-width: 1100px;
+			margin: 0 auto;
+			padding: 0 clamp(16px, 4vw, 20px);
+		}
+
+		.events-timeline::before {
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 0;
+			bottom: 0;
+			width: 3px;
+			background: linear-gradient(180deg, #fbbf24, rgba(251, 191, 36, .3));
+			transform: translateX(-50%);
+			border-radius: 2px;
+		}
+
+		.event-item {
+			position: relative;
+			margin: clamp(30px, 6vw, 80px) 0;
+			display: flex;
+			align-items: flex-start;
+			min-height: clamp(250px, 40vw, 300px);
+		}
+
+		.event-item:nth-child(even) {
+			flex-direction: row-reverse;
+		}
+
+		.event-card {
+			width: 46%;
+			position: relative;
+			padding: 0;
+			margin-top: 20px;
+			background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(0, 0, 0, 0.6));
+			border: 1px solid rgba(138, 43, 226, 0.3);
+			border-radius: 20px;
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(138, 43, 226, 0.1);
+			transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+			overflow: hidden;
+			backdrop-filter: blur(10px);
+		}
+
+		.event-card::before {
+			content: '';
+			position: absolute;
+			top: 40px;
+			width: clamp(20px, 4vw, 24px);
+			height: clamp(20px, 4vw, 24px);
+			background: var(--purple-gold);
+			border-radius: 50%;
+			border: clamp(3px, 1vw, 4px) solid #0b0f1e;
+			box-shadow: 0 0 25px rgba(138, 43, 226, .7);
+			z-index: 10;
+		}
+
+		.event-card::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 4px;
+			background: var(--purple-gold);
+			z-index: 1;
+		}
+
+		.event-item:nth-child(odd) .event-card::before {
+			right: clamp(-36px, -8vw, -44px);
+		}
+
+		.event-item:nth-child(even) .event-card::before {
+			left: clamp(-36px, -8vw, -44px);
+		}
+
+		@media (max-width: 768px) {
+			.events-timeline::before {
+				left: 20px;
+				transform: none;
+			}
+
+			.event-item {
+				flex-direction: column !important;
+				margin: clamp(25px, 5vw, 40px) 0;
+			}
+
+			.event-card {
+				width: 100%;
+				margin-left: 40px;
+				margin-top: 0;
+			}
+
+			.event-card::before {
+				left: -32px !important;
+				top: 20px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.events-timeline {
+				padding: 0 12px;
+			}
+
+			.event-card {
+				margin-left: 32px;
+			}
+
+			.event-card::before {
+				left: -26px !important;
+				width: 16px;
+				height: 16px;
+				border-width: 3px;
+			}
+		}
+
+		.event-card:hover {
+			transform: scale(1.02) translateY(-5px);
+			box-shadow: 0 25px 50px rgba(138, 43, 226, 0.2), 0 0 30px rgba(255, 215, 0, 0.15);
+			border-color: rgba(138, 43, 226, 0.5);
+		}
+
+		.event-card.upcoming {
+			border-color: rgba(138, 43, 226, 0.4);
+		}
+
+		.event-card.past {
+			opacity: 0.8;
+		}
+
+		.event-content {
+			position: relative;
+			z-index: 2;
+			padding: clamp(20px, 4vw, 24px);
+		}
+
+		.event-date {
+			color: #fbbf24;
+			font-weight: 600;
+			font-size: clamp(12px, 2.5vw, 14px);
+			margin-bottom: clamp(6px, 1.5vw, 8px);
+			display: flex;
+			align-items: center;
+			gap: clamp(4px, 1vw, 6px);
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+		}
+
+		.event-date::before {
+			content: '📅';
+			font-size: clamp(10px, 2vw, 12px);
+		}
+
+		.event-card h3 {
+			margin: 0 0 clamp(8px, 2vw, 10px) 0;
+			background: var(--purple-gold);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			font-size: clamp(16px, 3.5vw, 18px);
+			font-weight: 600;
+			line-height: 1.3;
+		}
+
+		.event-location {
+			color: var(--text-secondary);
+			font-size: clamp(11px, 2.2vw, 13px);
+			margin-bottom: clamp(10px, 2.5vw, 12px);
+			display: flex;
+			align-items: center;
+			gap: clamp(4px, 1vw, 6px);
+			transition: color 0.3s ease;
+		}
+
+		.event-card p {
+			margin: 0 0 clamp(12px, 3vw, 16px) 0;
+			color: var(--text-secondary);
+			line-height: 1.5;
+			font-size: clamp(12px, 2.8vw, 14px);
+			transition: color 0.3s ease;
+		}
+
+		.event-status {
+			position: absolute;
+			top: clamp(6px, 1.5vw, 8px);
+			left: clamp(6px, 1.5vw, 8px);
+			padding: clamp(4px, 1vw, 5px) clamp(8px, 2vw, 10px);
+			border-radius: clamp(12px, 3vw, 15px);
+			font-size: clamp(9px, 2vw, 11px);
+			font-weight: 600;
+			backdrop-filter: blur(10px);
+			z-index: 5;
+		}
+
+		.event-status.upcoming {
+			background: rgba(251, 191, 36, .25);
+			color: #fbbf24;
+			border: 1px solid rgba(251, 191, 36, .3);
+		}
+
+		.event-status.past {
+			background: rgba(107, 114, 128, .25);
+			color: #d1d5db;
+			border: 1px solid rgba(107, 114, 128, .3);
+		}
+
+		.register-btn {
+			display: inline-flex;
+			align-items: center;
+			gap: clamp(4px, 1vw, 6px);
+			padding: clamp(6px, 1.5vw, 8px) clamp(12px, 3vw, 16px);
+			background: var(--purple-gold);
+			color: #fff;
+			text-decoration: none;
+			border-radius: clamp(16px, 4vw, 20px);
+			font-size: clamp(11px, 2.5vw, 13px);
+			font-weight: 600;
+			transition: all 0.3s ease;
+			box-shadow: 0 3px 12px rgba(138, 43, 226, .3);
+			position: relative;
+			overflow: hidden;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+		}
+
+		.register-btn::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(135deg, rgba(255, 255, 255, .2), transparent);
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+
+		.register-btn:hover {
+			transform: translateY(-1px) scale(1.05);
+			box-shadow: 0 6px 20px rgba(138, 43, 226, .5);
+			background: var(--gold-purple);
+		}
+
+		.register-btn:hover::before {
+			opacity: 1;
+		}
+
+		.register-btn.disabled {
+			background: rgba(107, 114, 128, .25);
+			color: rgba(234, 240, 255, .4);
+			pointer-events: none;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+		}
+
+		.event-image {
+			width: 100%;
+			height: clamp(150px, 30vw, 200px);
+			position: relative;
+			overflow: hidden;
+			background-size: cover;
+			background-position: center top;
+			border-radius: clamp(8px, 2vw, 12px);
+			box-shadow: 0 8px 25px var(--shadow-color);
+			transition: box-shadow 0.3s ease;
+		}
+
+		.event-image.placeholder {
+			background: linear-gradient(135deg, rgba(251, 191, 36, .2), rgba(155, 92, 246, .15));
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: rgba(234, 240, 255, .6);
+			font-size: clamp(12px, 2.8vw, 14px);
+			font-weight: 500;
+		}
+
+		@media (prefers-color-scheme: light) {
+			.event-image.placeholder {
+				background: linear-gradient(135deg, rgba(99, 102, 241, .15), rgba(139, 92, 246, .1));
+				color: rgba(30, 41, 59, .6);
+			}
+		}
+
+		.event-image::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(180deg, transparent 0%, transparent 60%, rgba(11, 15, 30, .3) 100%);
+			opacity: 1;
+			transition: opacity 0.3s ease;
+		}
+
+		.event-card:hover .event-image::after {
+			background: linear-gradient(180deg, rgba(251, 191, 36, .1) 0%, transparent 40%, rgba(11, 15, 30, .4) 100%);
+		}
+
+		.event-visual {
+			position: absolute;
+			top: clamp(6px, 1.5vw, 8px);
+			right: clamp(6px, 1.5vw, 8px);
+			width: clamp(36px, 8vw, 44px);
+			height: clamp(36px, 8vw, 44px);
+			background: var(--purple-gold);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: clamp(12px, 3vw, 16px);
+			color: #fff;
+			font-weight: bold;
+			box-shadow: 0 6px 18px rgba(138, 43, 226, .6);
+			transition: all 0.3s ease;
+			z-index: 5;
+		}
+
+		.event-card:hover .event-visual {
+			transform: rotate(360deg) scale(1.1);
+		}
+
+		.event-visual.upcoming::before {
+			content: '🎯';
+		}
+
+		@media (max-width: 480px) {
+			.event-card:hover {
+				transform: scale(1.01) translateY(-2px);
+			}
+
+			.register-btn:hover {
+				transform: translateY(-1px) scale(1.02);
+			}
+		}
+
+		.event-visual.past::before {
+			content: '✨';
+		}
+
+		.filter-tabs {
+			display: flex;
+			justify-content: center;
+			gap: 16px;
+			margin: 40px 0 60px 0;
+			flex-wrap: wrap;
+			padding: 20px;
+			background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(255, 215, 0, 0.05));
+			border-radius: 20px;
+			border: 1px solid rgba(138, 43, 226, 0.2);
+			backdrop-filter: blur(10px);
+		}
+
+		.filter-tab {
+			padding: 12px 24px;
+			border-radius: 30px;
+			border: 2px solid rgba(138, 43, 226, 0.3);
+			background: rgba(255, 255, 255, 0.05);
+			color: var(--text-secondary);
+			cursor: pointer;
+			transition: all 0.3s ease;
+			font-size: 15px;
+			font-weight: 600;
+			position: relative;
+			overflow: hidden;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+		}
+
+		.filter-tab::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+			transition: left 0.5s ease;
+		}
+
+		.filter-tab:hover::before {
+			left: 100%;
+		}
+
+		.filter-tab.active,
+		.filter-tab:hover {
+			background: var(--purple-gold);
+			border-color: rgba(138, 43, 226, 0.5);
+			color: #fff;
+			transform: translateY(-2px);
+			box-shadow: 0 8px 25px rgba(138, 43, 226, 0.3);
+		}
+
+		@keyframes slideInLeft {
+			from {
+				opacity: 0;
+				transform: translateX(-50px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		@keyframes slideInRight {
+			from {
+				opacity: 0;
+				transform: translateX(50px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		.event-item:nth-child(odd) .event-card {
+			animation: slideInLeft 0.6s ease forwards;
+		}
+
+		.event-item:nth-child(even) .event-card {
+			animation: slideInRight 0.6s ease forwards;
+		}
+
+		.event-item:nth-child(2) .event-card {
+			animation-delay: 0.2s;
+		}
+
+		.event-item:nth-child(3) .event-card {
+			animation-delay: 0.4s;
+		}
+
+		.event-item:nth-child(4) .event-card {
+			animation-delay: 0.6s;
+		}
+
+		.event-item:nth-child(5) .event-card {
+			animation-delay: 0.8s;
+		}
+
+		.event-item:nth-child(6) .event-card {
+			animation-delay: 1s;
+		}
+
+		.event-item:nth-child(7) .event-card {
+			animation-delay: 1.2s;
+		}
+
+		/* Large tablets and small desktops */
+		@media (max-width: 1024px) {
+			.events-timeline {
+				max-width: 950px;
+				padding: 0 15px;
+			}
+
+			.event-card {
+				width: 47%;
+			}
+
+			.event-image {
+				height: 180px;
+			}
+		}
+
+		/* Tablets */
+		@media (max-width: 768px) {
+			.events-timeline {
+				padding: 0 10px;
+			}
+
+			.events-timeline::before {
+				left: 25px;
+				width: 2px;
+			}
+
+			.event-item,
+			.event-item:nth-child(even) {
+				flex-direction: row;
+				align-items: flex-start;
+				min-height: auto;
+			}
+
+			.event-card {
+				width: calc(100% - 60px);
+				margin-left: 60px;
+				margin-top: 0;
+			}
+
+			.event-content {
+				padding: 12px 0;
+			}
+
+			.event-item:nth-child(odd) .event-card::before,
+			.event-item:nth-child(even) .event-card::before {
+				left: -36px;
+				right: auto;
+				top: 30px;
+				width: 20px;
+				height: 20px;
+			}
+
+			.event-visual {
+				width: 40px;
+				height: 40px;
+				font-size: 16px;
+				top: 10px;
+				right: 10px;
+			}
+
+			.event-image {
+				height: 150px;
+				background-position: center center;
+			}
+
+			.hero {
+				padding: clamp(24px, 5vw, 40px) clamp(16px, 4vw, 20px);
+			}
+
+			.section-title {
+				font-size: clamp(20px, 5vw, 24px);
+			}
+		}
+
+		/* Large phones */
+		@media (max-width: 640px) {
+			main {
+				padding: 12px;
+			}
+
+			.events-timeline {
+				padding: 0 5px;
+			}
+
+			.filter-tabs {
+				gap: 6px;
+				margin-bottom: 35px;
+			}
+
+			.filter-tab {
+				padding: 6px 12px;
+				font-size: 12px;
+			}
+
+			.event-content {
+				padding: 10px 0;
+			}
+
+			.event-image {
+				height: 130px;
+				background-position: center 20%;
+			}
+
+			.event-card h3 {
+				font-size: 16px;
+				margin-bottom: 8px;
+			}
+
+			.event-card p {
+				font-size: 13px;
+				margin-bottom: 12px;
+				line-height: 1.4;
+			}
+
+			.register-btn {
+				padding: 6px 12px;
+				font-size: 12px;
+			}
+
+			.event-visual {
+				width: 36px;
+				height: 36px;
+				font-size: 14px;
+			}
+		}
+
+		/* Standard phones */
+		@media (max-width: 480px) {
+			body {
+				padding-top: 60px;
+			}
+
+			.events-timeline::before {
+				left: 18px;
+			}
+
+			.event-card {
+				width: calc(100% - 45px);
+				margin-left: 45px;
+			}
+
+			.event-content {
+				padding: 8px 0;
+			}
+
+			.event-item:nth-child(odd) .event-card::before,
+			.event-item:nth-child(even) .event-card::before {
+				left: -30px;
+				width: 18px;
+				height: 18px;
+				top: 25px;
+			}
+
+			.event-status {
+				top: 8px;
+				left: 8px;
+				padding: 4px 8px;
+				font-size: 10px;
+			}
+
+			.event-visual {
+				width: 32px;
+				height: 32px;
+				font-size: 13px;
+				top: 8px;
+				right: 8px;
+			}
+
+			.event-image {
+				height: 110px;
+				background-position: center 15%;
+			}
+
+			.event-date {
+				font-size: 12px;
+				margin-bottom: 6px;
+			}
+
+			.event-location {
+				font-size: 12px;
+				margin-bottom: 8px;
+			}
+
+			.event-card h3 {
+				font-size: 15px;
+			}
+
+			.event-card p {
+				font-size: 12px;
+			}
+
+			.hero {
+				padding: 20px 12px;
+			}
+
+			.section-title {
+				font-size: 18px;
+				margin: 40px 0 25px 0;
+			}
+		}
+
+		/* Small phones */
+		@media (max-width: 375px) {
+			.events-timeline::before {
+				left: 15px;
+			}
+
+			.event-card {
+				width: calc(100% - 38px);
+				margin-left: 38px;
+			}
+
+			.event-content {
+				padding: 6px 0;
+			}
+
+			.event-item:nth-child(odd) .event-card::before,
+			.event-item:nth-child(even) .event-card::before {
+				left: -27px;
+				width: 16px;
+				height: 16px;
+				top: 20px;
+			}
+
+			.event-visual {
+				width: 28px;
+				height: 28px;
+				font-size: 12px;
+				top: 6px;
+				right: 6px;
+			}
+
+			.event-image {
+				height: 90px;
+				background-position: center 10%;
+			}
+
+			.event-card h3 {
+				font-size: 14px;
+				line-height: 1.2;
+			}
+
+			.event-card p {
+				font-size: 11px;
+				line-height: 1.3;
+			}
+
+			.event-date,
+			.event-location {
+				font-size: 11px;
+			}
+
+			.register-btn {
+				padding: 5px 10px;
+				font-size: 11px;
+			}
+
+			.filter-tab {
+				padding: 5px 10px;
+				font-size: 11px;
+			}
+		}
+
+		/* Extra small phones */
+		@media (max-width: 320px) {
+			main {
+				padding: 8px;
+			}
+
+			.events-timeline {
+				padding: 0;
+			}
+
+			.events-timeline::before {
+				left: 12px;
+			}
+
+			.event-card {
+				width: calc(100% - 32px);
+				margin-left: 32px;
+			}
+
+			.event-content {
+				padding: 4px 0;
+			}
+
+			.event-item:nth-child(odd) .event-card::before,
+			.event-item:nth-child(even) .event-card::before {
+				left: -24px;
+				width: 14px;
+				height: 14px;
+				top: 18px;
+			}
+
+			.event-visual {
+				width: 24px;
+				height: 24px;
+				font-size: 10px;
+				top: 5px;
+				right: 5px;
+			}
+
+			.event-image {
+				height: 75px;
+				background-position: center 5%;
+			}
+
+			.event-card h3 {
+				font-size: 13px;
+			}
+
+			.event-card p {
+				font-size: 10px;
+				line-height: 1.3;
+			}
+
+			.event-date,
+			.event-location {
+				font-size: 10px;
+			}
+
+			.register-btn {
+				padding: 4px 8px;
+				font-size: 10px;
+			}
+
+			.hero {
+				padding: 10px 6px;
+			}
+
+			.section-title {
+				font-size: 15px;
+				margin: 35px 0 20px 0;
+			}
+
+			.filter-tabs {
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 4px;
+			}
+
+			.filter-tab {
+				padding: 4px 8px;
+				font-size: 10px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="site-header"></div>
+	<main id="main" tabindex="-1">
+		<section class="hero">
+			<h1>Events</h1>
+			<p>Join us at our upcoming events and explore highlights from our past gatherings that have empowered youth
+				across Kenya.</p>
+		</section>
+
+		<div class="filter-tabs">
+			<div class="filter-tab active" data-filter="all">All Events</div>
+			<div class="filter-tab" data-filter="upcoming">Upcoming</div>
+			<div class="filter-tab" data-filter="past">Past Events</div>
+		</div>
+
+		<section>
+			<h2 class="section-title">Our Events Journey</h2>
+			<div class="events-timeline" id="events-timeline">
+				<div class="event-item">
+					<article class="event-card upcoming">
+						<div class="event-status upcoming">Upcoming</div>
+						<div class="event-visual upcoming"></div>
+						<div class="event-content">
+							<div class="event-image placeholder">Event Image Coming Soon</div>
+							<div class="event-date">April 20, 2025</div>
+							<h3>Leadership Workshop Series - Nairobi</h3>
+							<div class="event-location">📍 University of Nairobi, Main Campus</div>
+							<p>A comprehensive 3-day workshop focusing on developing leadership skills, public speaking,
+								and community engagement for young leaders aged 18-25.</p>
+							<a href="#" class="register-btn">Join 🎯</a>
+						</div>
+					</article>
+				</div>
+
+				<div class="event-item">
+					<article class="event-card upcoming">
+						<div class="event-status upcoming">Upcoming</div>
+						<div class="event-visual upcoming"></div>
+						<div class="event-content">
+							<div class="event-image placeholder">Event Image Coming Soon</div>
+							<div class="event-date">May 15, 2025</div>
+							<h3>Women in Leadership Summit</h3>
+							<div class="event-location">📍 Kenyatta International Conference Centre</div>
+							<p>Empowering young women with the tools, networks, and confidence needed to become
+								transformative leaders in their communities.</p>
+							<a href="#" class="register-btn">Join 🎯</a>
+						</div>
+					</article>
+				</div>
+
+				<div class="event-item">
+					<article class="event-card upcoming">
+						<div class="event-status upcoming">Upcoming</div>
+						<div class="event-visual upcoming"></div>
+						<div class="event-content">
+							<div class="event-image placeholder">Event Image Coming Soon</div>
+							<div class="event-date">June 8, 2025</div>
+							<h3>Rural Youth Empowerment Program</h3>
+							<div class="event-location">📍 Nakuru County</div>
+							<p>Taking our programs to rural communities, focusing on agricultural leadership,
+								entrepreneurship, and sustainable development.</p>
+							<a href="#" class="register-btn">Join 🎯</a>
+						</div>
+					</article>
+				</div>
+
+				<div class="event-item">
+					<article class="event-card past">
+						<div class="event-status past">Completed</div>
+						<div class="event-visual past"></div>
+						<div class="event-content">
+							<div class="event-image"><img src="images/event1.jpeg" alt="Youth Leadership Summit 2024"
+									style="width:100%;height:100%;object-fit:cover;border-radius:inherit;"></div>
+							<div class="event-date">March 5, 2024</div>
+							<h3>Youth Leadership Summit 2024</h3>
+							<div class="event-location">📍 Nairobi</div>
+							<p>Over 200 young leaders gathered for our flagship annual event featuring keynote speakers,
+								workshops, and networking opportunities.</p>
+							<a href="#" class="register-btn disabled">View ✨</a>
+						</div>
+					</article>
+				</div>
+
+				<div class="event-item">
+					<article class="event-card past">
+						<div class="event-status past">Completed</div>
+						<div class="event-visual past"></div>
+						<div class="event-content">
+							<div class="event-image"><img src="images/event2.jpeg"
+									alt="Valentine's Day Community Service"
+									style="width:100%;height:100%;object-fit:cover;border-radius:inherit;"></div>
+							<div class="event-date">February 14, 2024</div>
+							<h3>Valentine's Day Community Service</h3>
+							<div class="event-location">📍 Kibera, Nairobi</div>
+							<p>A day of giving back to the community through various service projects, demonstrating
+								leadership through action and compassion.</p>
+							<a href="#" class="register-btn disabled">View ✨</a>
+						</div>
+					</article>
+				</div>
+
+				<div class="event-item">
+					<article class="event-card past">
+						<div class="event-status past">Completed</div>
+						<div class="event-visual past"></div>
+						<div class="event-content">
+							<div class="event-image"><img src="images/event3.jpeg" alt="New Year Leadership Kickoff"
+									style="width:100%;height:100%;object-fit:cover;border-radius:inherit;"></div>
+							<div class="event-date">January 20, 2024</div>
+							<h3>New Year Leadership Kickoff</h3>
+							<div class="event-location">📍 Mombasa</div>
+							<p>Started the year with goal-setting workshops, leadership training, and community building
+								activities for coastal region youth.</p>
+							<a href="#" class="register-btn disabled">View ✨</a>
+						</div>
+					</article>
+				</div>
+
+				<div class="event-item">
+					<article class="event-card past">
+						<div class="event-status past">Completed</div>
+						<div class="event-visual past"></div>
+						<div class="event-content">
+							<div class="event-image"><img src="images/event4.jpeg" alt="Year-End Celebration & Awards"
+									style="width:100%;height:100%;object-fit:cover;border-radius:inherit;"></div>
+							<div class="event-date">December 15, 2023</div>
+							<h3>Year-End Celebration & Awards</h3>
+							<div class="event-location">📍 Nairobi</div>
+							<p>Celebrating the achievements of our program participants and recognizing outstanding
+								leadership contributions throughout 2023.</p>
+							<a href="#" class="register-btn disabled">View ✨</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+	<div id="site-footer"></div>
+
+	<script>
+		function injectHTML(target, html) {
+			target.innerHTML = html;
+			const scripts = Array.from(target.querySelectorAll('script'));
+			scripts.forEach((old) => {
+				try {
+					const fresh = document.createElement('script');
+					Array.from(old.attributes).forEach(attr => fresh.setAttribute(attr.name, attr.value));
+					if (old.src) {
+						fresh.src = old.src;
+						fresh.async = false;
+					} else {
+						fresh.text = old.textContent || '';
+					}
+					const parent = old.parentNode || target;
+					parent.replaceChild(fresh, old);
+				} catch (e) {
+					console.error('Script injection failed:', e);
+				}
+			});
+		}
+
+		// Filter functionality
+		const filterTabs = document.querySelectorAll('.filter-tab');
+		const eventItems = document.querySelectorAll('.event-item');
+
+		filterTabs.forEach(tab => {
+			tab.addEventListener('click', () => {
+				filterTabs.forEach(t => t.classList.remove('active'));
+				tab.classList.add('active');
+
+				const filter = tab.dataset.filter;
+				eventItems.forEach(item => {
+					const card = item.querySelector('.event-card');
+					if (filter === 'all') {
+						item.style.display = 'flex';
+					} else if (filter === 'upcoming' && card.classList.contains('upcoming')) {
+						item.style.display = 'flex';
+					} else if (filter === 'past' && card.classList.contains('past')) {
+						item.style.display = 'flex';
+					} else {
+						item.style.display = 'none';
+					}
+				});
+			});
+		});
+
+		// Add click animations to register buttons
+		document.querySelectorAll('.register-btn:not(.disabled)').forEach(btn => {
+			btn.addEventListener('click', (e) => {
+				e.preventDefault();
+				btn.style.transform = 'scale(0.95)';
+				setTimeout(() => {
+					btn.style.transform = '';
+				}, 150);
+			});
+		});
+
+		Promise.all([
+			fetch('components/header.html').then(r => r.text()),
+			fetch('components/footer.html').then(r => r.text())
+		]).then(([headerHTML, footerHTML]) => {
+			injectHTML(document.getElementById('site-header'), headerHTML);
+			injectHTML(document.getElementById('site-footer'), footerHTML);
+		}).catch(err => {
+			console.error('Failed to load components:', err);
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Theme Across All Pages - Poise & Purpose Kenya</title>
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+</head>
+<body>
+    <div id="site-header"></div>
+    
+    <main style="padding: 100px 20px 50px; max-width: 1200px; margin: 0 auto;">
+        <h1>🌓 Theme Switcher Test - All Pages</h1>
+        
+        <div style="background: var(--theme-bg-cards, rgba(0,0,0,0.6)); 
+                    border: 1px solid var(--theme-border-light, rgba(255,255,255,0.1)); 
+                    border-radius: 15px; 
+                    padding: 2rem; 
+                    margin: 2rem 0;
+                    color: var(--theme-text-secondary, #F0E68C);">
+            <h2 style="color: var(--theme-text-color, #f5f7ff); margin-bottom: 1rem;">
+                ✅ Theme Switcher is Now Active!
+            </h2>
+            <p><strong>What you should see:</strong></p>
+            <ul>
+                <li>🌙 Theme toggle button in the header (next to the logo)</li>
+                <li>Click it to switch between dark and light themes</li>
+                <li>Background changes from dark (#121212) to light (#ffffff)</li>
+                <li>Text colors automatically adjust for readability</li>
+                <li>Your choice is saved and persists across all pages</li>
+            </ul>
+        </div>
+        
+        <div style="background: var(--theme-bg-cards, rgba(0,0,0,0.6)); 
+                    border: 1px solid var(--theme-border-light, rgba(255,255,255,0.1)); 
+                    border-radius: 15px; 
+                    padding: 2rem; 
+                    margin: 2rem 0;
+                    color: var(--theme-text-secondary, #F0E68C);">
+            <h2 style="color: var(--theme-text-color, #f5f7ff); margin-bottom: 1rem;">
+                🧭 Test Navigation
+            </h2>
+            <p style="margin-bottom: 1rem;">Click these links to test the theme switcher on different pages:</p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="index.html" style="color: var(--pp-accent2, #FFD700); text-decoration: none; padding: 0.5rem 1rem; border: 1px solid var(--pp-accent1, #D4AF37); border-radius: 8px;">🏠 Index</a>
+                <a href="about.html" style="color: var(--pp-accent2, #FFD700); text-decoration: none; padding: 0.5rem 1rem; border: 1px solid var(--pp-accent1, #D4AF37); border-radius: 8px;">ℹ️ About</a>
+                <a href="blog.html" style="color: var(--pp-accent2, #FFD700); text-decoration: none; padding: 0.5rem 1rem; border: 1px solid var(--pp-accent1, #D4AF37); border-radius: 8px;">📝 Blog</a>
+                <a href="contact.html" style="color: var(--pp-accent2, #FFD700); text-decoration: none; padding: 0.5rem 1rem; border: 1px solid var(--pp-accent1, #D4AF37); border-radius: 8px;">📞 Contact</a>
+                <a href="get-involved.html" style="color: var(--pp-accent2, #FFD700); text-decoration: none; padding: 0.5rem 1rem; border: 1px solid var(--pp-accent1, #D4AF37); border-radius: 8px;">🤝 Get Involved</a>
+                <a href="events.html" style="color: var(--pp-accent2, #FFD700); text-decoration: none; padding: 0.5rem 1rem; border: 1px solid var(--pp-accent1, #D4AF37); border-radius: 8px;">📅 Events</a>
+                <a href="impact.html" style="color: var(--pp-accent2, #FFD700); text-decoration: none; padding: 0.5rem 1rem; border: 1px solid var(--pp-accent1, #D4AF37); border-radius: 8px;">📊 Impact</a>
+                <a href="Programs.html" style="color: var(--pp-accent2, #FFD700); text-decoration: none; padding: 0.5rem 1rem; border: 1px solid var(--pp-accent1, #D4AF37); border-radius: 8px;">🎯 Programs</a>
+            </div>
+            <p style="color: var(--theme-text-muted, rgba(240,242,255,0.7)); margin-top: 1rem; font-size: 0.9rem;">
+                <em>✨ The theme preference will persist across all pages!</em>
+            </p>
+        </div>
+        
+        <div style="background: var(--theme-bg-cards, rgba(0,0,0,0.6)); 
+                    border: 1px solid var(--theme-border-light, rgba(255,255,255,0.1)); 
+                    border-radius: 15px; 
+                    padding: 2rem; 
+                    margin: 2rem 0;
+                    color: var(--theme-text-secondary, #F0E68C);">
+            <h2 style="color: var(--theme-text-color, #f5f7ff); margin-bottom: 1rem;">
+                🎨 Theme Details
+            </h2>
+            <p><strong>Dark Theme (Default):</strong></p>
+            <ul>
+                <li>Background: #121212 (dark)</li>
+                <li>Text: #ffffff (white)</li>
+                <li>Secondary Text: #F0E68C (light gold)</li>
+                <li>Button shows: 🌙 (moon)</li>
+            </ul>
+            <p><strong>Light Theme:</strong></p>
+            <ul>
+                <li>Background: #ffffff (white)</li>
+                <li>Text: #000000 (black)</li>
+                <li>Secondary Text: #34495e (dark gray)</li>
+                <li>Button shows: ☀️ (sun)</li>
+            </ul>
+        </div>
+    </main>
+    
+    <div id="site-footer"></div>
+    
+    <script>
+        // Include header and footer components
+        function injectHTML(target, html){
+            target.innerHTML = html;
+            const scripts = Array.from(target.querySelectorAll('script'));
+            scripts.forEach((old)=>{
+                try{
+                    const fresh = document.createElement('script');
+                    Array.from(old.attributes).forEach(attr => fresh.setAttribute(attr.name, attr.value));
+                    if(old.src){ fresh.src = old.src; fresh.async = false; } else { fresh.text = old.textContent || ''; }
+                    const parent = old.parentNode || target;
+                    parent.replaceChild(fresh, old);
+                }catch(e){ console.error('Script injection failed:', e); }
+            });
+        }
+        
+        Promise.all([
+            fetch('components/header.html').then(r=>r.text()),
+            fetch('components/footer.html').then(r=>r.text())
+        ]).then(([h,f])=>{
+            injectHTML(document.getElementById('site-header'), h);
+            injectHTML(document.getElementById('site-footer'), f);
+        }).catch(err=>console.error('Failed to load components:', err));
+    </script>
+</body>
+</html>

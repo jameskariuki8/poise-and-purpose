@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Poise & Purpose Kenya</title>
+    <meta name="description"
+        content="Discover the mission, vision, and leadership team behind Poise & Purpose Kenya. We are dedicated to empowering young women to lead with confidence.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://poiseandpurposekenya.org/about.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://poiseandpurposekenya.org/about.html">
+    <meta property="og:title" content="About Us - Poise & Purpose Kenya">
+    <meta property="og:description"
+        content="Discover the mission, vision, and leadership team behind Poise & Purpose Kenya.">
+    <meta property="og:image" content="https://poiseandpurposekenya.org/images/logo.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://poiseandpurposekenya.org/about.html">
+    <meta property="twitter:title" content="About Us - Poise & Purpose Kenya">
+    <meta property="twitter:description"
+        content="Discover the mission, vision, and leadership team behind Poise & Purpose Kenya.">
+    <meta property="twitter:image" content="https://poiseandpurposekenya.org/images/logo.jpg">
+
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #8a2be2;
+            --secondary: #00bfff;
+            --accent: #ff69b4;
+            --dark: #0f0f1e;
+            --darker: #070711;
+            --light: #f8f8ff;
+            --glass: rgba(0, 0, 0, 0.08);
+            --glass-border: rgba(0, 0, 0, 0.12);
+            --gold: #FFD700;
+            --gold2: #D4AF37;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text-primary: #1e293b;
+            --text-secondary: #475569;
+            --purple: #8a2be2;
+            --purple-light: #a855f7;
+            --purple-dark: #6b21a8;
+            --purple-gold: linear-gradient(135deg, #8a2be2, #FFD700);
+            --gold-purple: linear-gradient(135deg, #FFD700, #8a2be2);
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg-primary: #ffffff;
+                --bg-secondary: #f8fafc;
+                --text-primary: #1e293b;
+                --text-secondary: #475569;
+                --glass: rgba(0, 0, 0, 0.08);
+                --glass-border: rgba(0, 0, 0, 0.12);
+            }
+
+            .title {
+                background: var(--purple-gold);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .title::after {
+                background: var(--purple-gold);
+            }
+
+            .subnav-link.is-active {
+                background: var(--purple-gold);
+                color: #fff;
+            }
+
+            .kv h3 {
+                background: var(--purple-gold);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .step-heading {
+                background: var(--purple-gold);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .leader h4 {
+                background: var(--purple-gold);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .fact-number {
+                background: var(--purple-gold);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            /* Improve badge visibility in bright theme */
+            .pill {
+                color: #6b21a8;
+                border-color: rgba(138, 43, 226, .28);
+                background: rgba(138, 43, 226, .10);
+            }
+
+            .story-step {
+                border-color: rgba(138, 43, 226, .25);
+                background: linear-gradient(135deg, rgba(138, 43, 226, .06) 0%, rgba(255, 215, 0, .05) 100%);
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding-top: 78px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+
+        section {
+            padding: 4.5rem 0;
+            position: relative;
+            scroll-margin-top: 110px;
+        }
+
+        .title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            background: var(--purple-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+
+        .title::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--purple-gold);
+            border-radius: 2px;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 4rem 0 2rem;
+            background: linear-gradient(135deg, var(--bg-secondary), #2d2d2d);
+            transition: background 0.3s ease;
+        }
+
+        .hero .lead {
+            max-width: 840px;
+            margin: .75rem auto 0;
+            text-align: center;
+            color: var(--text-secondary);
+            transition: color 0.3s ease;
+        }
+
+        /* In-page Subnav */
+        .subnav {
+            position: sticky;
+            top: 78px;
+            z-index: 900;
+            background: linear-gradient(135deg, rgba(15, 15, 30, 0.85), rgba(7, 7, 17, 0.92));
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .subnav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .subnav-list {
+            display: flex;
+            gap: .5rem;
+            list-style: none;
+            margin: 0;
+            padding: .75rem 0;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .subnav-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: .55rem .9rem;
+            border-radius: 999px;
+            color: #FFEC8B;
+            text-decoration: none;
+            border: 1px solid transparent;
+            transition: background .25s ease, color .25s ease, border-color .25s ease;
+            white-space: nowrap;
+        }
+
+        .subnav-link:hover,
+        .subnav-link:focus-visible {
+            color: var(--light);
+            border-color: var(--glass-border);
+            outline: none;
+        }
+
+        .subnav-link.is-active {
+            color: #0b0b0b;
+            background: linear-gradient(90deg, var(--gold2), var(--gold));
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        /* Cards */
+        .card {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(20, 20, 30, 0.45) 100%);
+            border: 1px solid rgba(212, 175, 55, .35);
+            border-radius: 18px;
+            padding: 1.5rem;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .3), 0 5px 15px rgba(212, 175, 55, .1);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(12px);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #D4AF37, #FFD700, #FFEC8B);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, .4), 0 10px 25px rgba(212, 175, 55, .2);
+            border-color: rgba(212, 175, 55, .5);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .grid-2 {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .grid-3 {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .grid-4 {
+            display: grid;
+            gap: 1.25rem;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        /* Who We Are */
+        .pill {
+            display: inline-block;
+            padding: .3rem .7rem;
+            border: 1px solid rgba(212, 175, 55, .28);
+            border-radius: 999px;
+            color: #FFEC8B;
+            font-size: .85rem;
+            margin-bottom: .85rem;
+        }
+
+        .kv {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .kv h3 {
+            color: var(--gold);
+            font-size: 1.15rem;
+            margin-bottom: .25rem;
+        }
+
+        .kv p {
+            color: #F0E68C;
+        }
+
+        /* Story */
+        .story {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.03), var(--bg-secondary));
+            transition: background 0.3s ease;
+        }
+
+        .story p {
+            color: #f0f0f0;
+        }
+
+        /* Story scrollytelling */
+        .story-hero {
+            max-width: 900px;
+            margin: 0 auto 2rem;
+        }
+
+        .story-hero p {
+            color: #F0E68C;
+            font-size: 1.05rem;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, rgba(212, 175, 55, .55), rgba(255, 215, 0, .25));
+            border-radius: 2px;
+        }
+
+        .story-step {
+            position: relative;
+            margin-left: 1.75rem;
+            border: 1px solid rgba(212, 175, 55, .3);
+            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(255, 215, 0, 0.05) 50%, rgba(255, 236, 139, 0.03) 100%);
+            padding: 1.25rem 1.5rem;
+            box-shadow: 0 12px 32px rgba(212, 175, 55, .1), 0 4px 12px rgba(255, 215, 0, .05);
+            outline: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .story-step::before {
+            content: "";
+            position: absolute;
+            left: -1.1rem;
+            top: 1.05rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 35% 35%, #FFD700, #D4AF37);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, .18);
+        }
+
+        .story-step.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        .story-step.is-active {
+            border-color: rgba(255, 215, 0, .7);
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(255, 215, 0, 0.1) 50%, rgba(255, 236, 139, 0.08) 100%);
+            box-shadow: 0 20px 50px rgba(212, 175, 55, .25), 0 8px 20px rgba(255, 215, 0, .2);
+            transform: translateY(-5px) scale(1.02);
+        }
+
+        .story-step.is-active::before {
+            box-shadow: 0 0 0 6px rgba(212, 175, 55, .3), 0 0 20px rgba(255, 215, 0, .5);
+        }
+
+        .story-step:focus-visible {
+            outline: 2px solid #FFD700;
+            outline-offset: 2px;
+        }
+
+        .chapter-badge {
+            display: inline-block;
+            font-size: .8rem;
+            color: white;
+            border: 1px solid rgba(212, 175, 55, .28);
+            border-radius: 999px;
+            padding: .25rem .6rem;
+            margin-bottom: .5rem;
+            background: goldenrod;
+        }
+
+        /* Light theme overrides for better visibility */
+        @media (prefers-color-scheme: light) {
+            .chapter-badge {
+                color: #000000 !important;
+                border-color: rgba(138, 43, 226, .4) !important;
+                background: rgba(138, 43, 226, .15) !important;
+                font-weight: 600 !important;
+            }
+        }
+
+        .step-heading {
+            color: var(--gold);
+            font-size: 1.25rem;
+            margin: .1rem 0 .35rem;
+        }
+
+        .pull-quote {
+            max-width: 900px;
+            margin: 2rem auto 0;
+            border-left: 4px solid #D4AF37;
+        }
+
+        .pull-quote p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: #FFEC8B;
+        }
+
+        @media (min-width: 768px) {
+            .timeline::before {
+                left: 12px;
+            }
+
+            .story-step {
+                margin-left: 2.25rem;
+                padding: clamp(1.25rem, 2vw, 1.5rem);
+            }
+
+            .step-heading {
+                font-size: clamp(1.25rem, 2vw, 1.35rem);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .story-step {
+                padding: clamp(1rem, 2vw, 1.25rem);
+                margin-left: clamp(1.5rem, 3vw, 1.75rem);
+            }
+
+            .step-heading {
+                font-size: clamp(1.1rem, 3vw, 1.25rem);
+            }
+
+            .chapter-badge {
+                font-size: clamp(0.75rem, 1.5vw, 0.8rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .timeline::before {
+                left: 6px;
+            }
+
+            .story-step {
+                margin-left: 1.25rem;
+                padding: clamp(0.75rem, 2vw, 1rem);
+            }
+
+            .story-step::before {
+                left: -0.85rem;
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            .story-step {
+                transition: none;
+                transform: none !important;
+                opacity: 1 !important;
+            }
+        }
+
+        /* Leadership */
+        .leaders {
+            background: linear-gradient(135deg, var(--bg-secondary), #2d2d2d);
+            transition: background 0.3s ease;
+        }
+
+        .leader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: clamp(0.75rem, 1.5vw, 1rem);
+            transition: transform 0.3s ease;
+        }
+
+        .leader:hover {
+            transform: translateY(-5px);
+        }
+
+        .leader .ph {
+            width: clamp(120px, 18vw, 160px);
+            height: clamp(120px, 18vw, 160px);
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            border: 3px solid transparent;
+            background-clip: padding-box;
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+            color: #B8860B;
+            font-weight: 600;
+            position: relative;
+            transition: all 0.4s ease;
+        }
+
+        .leader .ph::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            background: linear-gradient(45deg, var(--gold2), var(--gold), #FFEC8B, var(--gold2));
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .leader:hover .ph::before {
+            opacity: 1;
+        }
+
+        .leader .ph img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .leader:hover .ph img {
+            transform: scale(1.1);
+        }
+
+        .leader h4 {
+            color: var(--gold);
+            font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .leader p {
+            color: #e6d4ff;
+            font-size: clamp(0.9rem, 1.8vw, 1rem);
+            opacity: 0.9;
+        }
+
+        /* Partners */
+        .partners {
+            background: linear-gradient(135deg, #2d2d2d, var(--bg-secondary));
+            transition: background 0.3s ease;
+        }
+
+        .logos {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            align-items: center;
+        }
+
+        .logo {
+            height: 80px;
+            background: linear-gradient(135deg, rgba(0, 0, 0, .5) 0%, rgba(20, 20, 30, .35) 100%);
+            border: 1px solid rgba(212, 175, 55, .3);
+            border-radius: 16px;
+            display: grid;
+            place-items: center;
+            color: #FFEC8B;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .logo:hover {
+            transform: translateY(-3px);
+            border-color: rgba(212, 175, 55, .5);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, .15);
+        }
+
+        .logo:hover::before {
+            left: 100%;
+        }
+
+        /* Quick Facts */
+        .quick-facts {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .fact-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.12) 0%, rgba(255, 215, 0, 0.08) 50%, rgba(255, 236, 139, 0.06) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(8px);
+        }
+
+        .fact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold2), var(--gold), #FFEC8B);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .fact-card::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            transform: translate(-50%, -50%);
+            transition: all 0.4s ease;
+            border-radius: 50%;
+        }
+
+        .fact-card:hover {
+            transform: translateY(-8px) scale(1.05);
+            border-color: rgba(255, 215, 0, 0.5);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.25), 0 5px 15px rgba(255, 215, 0, 0.15);
+        }
+
+        .fact-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .fact-card:hover::after {
+            width: 200px;
+            height: 200px;
+        }
+
+        .fact-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 0.75rem;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .fact-card:hover .fact-icon {
+            transform: scale(1.1);
+        }
+
+        .fact-number {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.2rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .fact-label {
+            color: #F0E68C;
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            section {
+                padding: clamp(3rem, 5vw, 4.5rem) 0;
+            }
+
+            .container {
+                padding: 0 clamp(1rem, 2vw, 1.25rem);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+                gap: clamp(1.5rem, 3vw, 2rem);
+            }
+
+            .grid-4 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: clamp(1rem, 2vw, 1.25rem);
+            }
+
+            .subnav-inner {
+                justify-content: flex-start;
+            }
+
+            .subnav-list {
+                padding-left: .25rem;
+                padding-right: .25rem;
+                gap: clamp(0.25rem, 1vw, 0.5rem);
+            }
+
+            .quick-facts {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid-3 {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: clamp(1rem, 2vw, 1.5rem);
+            }
+
+            .title {
+                font-size: clamp(1.6rem, 4vw, 2rem);
+            }
+
+            .hero {
+                padding: clamp(2.5rem, 4vw, 3rem) 0 clamp(1.5rem, 3vw, 2rem);
+            }
+
+            .hero .lead {
+                font-size: clamp(0.95rem, 2vw, 1.1rem);
+            }
+
+            .card {
+                padding: clamp(1.25rem, 2vw, 1.5rem);
+            }
+
+            .subnav-link {
+                padding: clamp(0.45rem, 1vw, 0.55rem) clamp(0.75rem, 1.5vw, 0.9rem);
+                font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-4 {
+                grid-template-columns: 1fr;
+            }
+
+            .title {
+                font-size: clamp(1.5rem, 4vw, 1.8rem);
+            }
+
+            .fact-card {
+                padding: clamp(1rem, 2vw, 1.25rem);
+            }
+
+            .fact-number {
+                font-size: clamp(1.6rem, 4vw, 1.8rem);
+            }
+
+            .fact-icon {
+                font-size: clamp(1.8rem, 3vw, 2rem);
+            }
+
+            .container {
+                padding: 0 clamp(0.75rem, 2vw, 1rem);
+            }
+
+            .quick-facts {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: clamp(1.4rem, 4vw, 1.6rem);
+            }
+
+            .hero .lead {
+                font-size: clamp(0.9rem, 2vw, 0.95rem);
+            }
+
+            .fact-card {
+                padding: clamp(0.75rem, 2vw, 1rem);
+            }
+
+            .fact-number {
+                font-size: clamp(1.4rem, 4vw, 1.6rem);
+            }
+
+            .fact-icon {
+                font-size: clamp(1.6rem, 3vw, 1.8rem);
+            }
+
+            .card {
+                padding: clamp(1rem, 2vw, 1.25rem);
+            }
+
+            .subnav-link {
+                padding: clamp(0.4rem, 1vw, 0.45rem) clamp(0.6rem, 1.5vw, 0.75rem);
+                font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+            }
+
+            .leader .ph {
+                width: clamp(100px, 20vw, 140px);
+                height: clamp(100px, 20vw, 140px);
+            }
+        }
+
+        @media (max-width: 375px) {
+            .container {
+                padding: 0 clamp(0.5rem, 1.5vw, 0.75rem);
+            }
+
+            .title {
+                font-size: clamp(1.3rem, 4vw, 1.5rem);
+            }
+
+            .hero .lead {
+                font-size: clamp(0.85rem, 2vw, 0.9rem);
+            }
+
+            .card {
+                padding: clamp(0.75rem, 1.5vw, 1rem);
+            }
+        }
+
+        @media (max-width: 320px) {
+            .container {
+                padding: 0 clamp(0.5rem, 1vw, 0.75rem);
+            }
+
+            .title {
+                font-size: 1.3rem;
+            }
+
+            .hero .lead {
+                font-size: 0.8rem;
+            }
+
+            .fact-card {
+                padding: 0.75rem;
+            }
+
+            .fact-number {
+                font-size: 1.3rem;
+            }
+
+            .fact-icon {
+                font-size: 1.5rem;
+            }
+
+            .card {
+                padding: 0.75rem;
+            }
+
+            .leader .ph {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="site-header"></div>
+
+    <main id="main" tabindex="-1">
+        <section class="hero">
+            <div class="container">
+                <h1 class="title">About Poise &amp; Purpose Kenya</h1>
+                <p class="lead">We empower girls and young women to lead with confidence, creativity, and compassion,
+                    creating ripples of impact across communities.</p>
+            </div>
+        </section>
+
+        <nav class="subnav" aria-label="About page navigation">
+            <div class="container subnav-inner">
+                <ul class="subnav-list">
+                    <li><a class="subnav-link is-active" href="#who">Who We Are</a></li>
+                    <li><a class="subnav-link" href="#story">Our Story</a></li>
+                    <li><a class="subnav-link" href="#leadership">Leadership Team</a></li>
+                    <li><a class="subnav-link" href="#partners">Partners &amp; Sponsors</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="who" aria-labelledby="who-title">
+            <div class="container grid-2">
+                <div class="card">
+                    <span class="pill">Who We Are</span>
+                    <h2 id="who-title" class="title" style="margin-top:.25rem">Our Identity</h2>
+                    <div class="kv">
+                        <div>
+                            <h3>Vision</h3>
+                            <p>Young women thriving as bold leaders shaping an equitable future.</p>
+                        </div>
+                        <div>
+                            <h3>Mission</h3>
+                            <p>Equip girls and young women with skills, mentorship, and opportunities to lead change.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Core Values</h3>
+                            <p>Integrity, Courage, Empathy, Excellence, Community.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 style="color:var(--gold); margin-bottom:1.5rem; text-align:center; font-size:1.3rem">Quick Facts
+                    </h3>
+                    <div class="quick-facts">
+                        <div class="fact-card">
+                            <i class="fa-solid fa-users fact-icon" aria-hidden="true"></i>
+                            <div class="fact-number">2,500+</div>
+                            <div class="fact-label">Girls Empowered</div>
+                        </div>
+                        <div class="fact-card">
+                            <i class="fa-solid fa-globe fact-icon" aria-hidden="true"></i>
+                            <div class="fact-number">120+</div>
+                            <div class="fact-label">Communities Reached</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="story" class="story" aria-labelledby="story-title">
+            <div class="container">
+                <h2 id="story-title" class="title">🌸 Our Story</h2>
+                <header class="story-hero card">
+                    <p>Poise and Purpose Kenya began in September 2024, in Kisii County, with a dream bigger than
+                        ourselves to see young women and girls rise as bold, confident leaders.</p>
+                </header>
+                <ol class="timeline" role="list">
+                    <li id="story-kisii" class="story-step" tabindex="-1">
+                        <article>
+                            <div class="chapter-badge">Sep 2024 · Kisii County</div>
+                            <h3 class="step-heading">A dream bigger than ourselves</h3>
+                            <p>We began with a bold vision: to see young women and girls rise as confident leaders —
+                                shaping their communities with courage and purpose.</p>
+                        </article>
+                    </li>
+                    <li id="story-circles" class="story-step" tabindex="-1">
+                        <article>
+                            <div class="chapter-badge">Conversations → Circles</div>
+                            <h3 class="step-heading">From talk to togetherness</h3>
+                            <p>What started as a few conversations in classrooms and community spaces quickly grew into
+                                circles of mentorship, safe spaces for dialogue, and campaigns challenging the norms
+                                that hold girls back.</p>
+                        </article>
+                    </li>
+                    <li id="story-urgency" class="story-step" tabindex="-1">
+                        <article>
+                            <div class="chapter-badge">Urgency &amp; Hope</div>
+                            <h3 class="step-heading">Dismantling barriers, daring to hope</h3>
+                            <p>We were born out of urgency and hope: urgency to dismantle patriarchy, and hope for a
+                                Kenya where leadership is not limited by gender.</p>
+                        </article>
+                    </li>
+                    <li id="story-nation" class="story-step" tabindex="-1">
+                        <article>
+                            <div class="chapter-badge">Across Kenya</div>
+                            <h3 class="step-heading">From Kisii to the nation</h3>
+                            <p>From Kisii to the rest of the country, our movement carries one message: every girl has
+                                power, every girl has purpose, and every girl can lead.</p>
+                        </article>
+                    </li>
+                </ol>
+                <blockquote class="pull-quote card">
+                    <p>“Every girl has power. Every girl has purpose. Every girl can lead.”</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="leadership" class="leaders" aria-labelledby="leaders-title">
+            <div class="container">
+                <h2 id="leaders-title" class="title">Leadership Team</h2>
+                <div class="grid-4">
+                    <article class="card leader">
+                        <div class="ph" aria-label="Photo of Daisy Khasandi Shaviya">
+                            <img src="images/daisy-khasandi-shaviya.jpeg" alt="Photo of Daisy Khasandi Shaviya">
+                        </div>
+                        <h4>Daisy Khasandi Shaviya</h4>
+                        <p>Founder and CEO</p>
+                    </article>
+                    <article class="card leader">
+                        <div class="ph" aria-label="Photo of Matilda Nzioki">
+                            <img src="images/Associates.jpg" alt="Photo of Matilda Nzioki">
+                        </div>
+                        <h4>Matilda Nzioki</h4>
+                        <p>Associate Executive Officer</p>
+                    </article>
+                    <article class="card leader">
+                        <div class="ph" aria-label="Photo of Nancy Wangui">
+                            <img src="images/Finance Nancy wangui.jpg" alt="Photo of Nancy Wangui">
+                        </div>
+                        <h4>Nancy Wangui</h4>
+                        <p>Finance Officer</p>
+                    </article>
+                    <article class="card leader">
+                        <div class="ph" aria-label="Photo of Aching Rehema">
+                            <img src="images/Partnerships and Development Lead.jpg" alt="Photo of Aching Rehema">
+                        </div>
+                        <h4>Aching Rehema</h4>
+                        <p>Partnerships and Development Lead</p>
+                    </article>
+                    <article class="card leader">
+                        <div class="ph" aria-label="Photo of Shirley Nafula">
+                            <img src="images/Advocacy Policy Lead.jpg" alt="Photo of Shirley Nafula">
+                        </div>
+                        <h4>Shirley Nafula</h4>
+                        <p>Advocacy and Policy Lead</p>
+                    </article>
+                    <article class="card leader">
+                        <div class="ph" aria-label="Photo of Agnes Kalekye">
+                            <img src="images/Engagement.jpg" alt="Photo of Agnes Kalekye">
+                        </div>
+                        <h4>Agnes Kalekye</h4>
+                        <p>Engagement and Impact Coordinator</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script>
+        function injectHTML(target, html) {
+            target.innerHTML = html;
+            const scripts = Array.from(target.querySelectorAll('script'));
+            scripts.forEach((old) => {
+                try {
+                    const fresh = document.createElement('script');
+                    Array.from(old.attributes).forEach(attr => fresh.setAttribute(attr.name, attr.value));
+                    if (old.src) { fresh.src = old.src; fresh.async = false; } else { fresh.text = old.textContent || ''; }
+                    const parent = old.parentNode || target;
+                    parent.replaceChild(fresh, old);
+                } catch (e) { console.error('Script injection failed:', e); }
+            });
+        }
+        Promise.all([
+            fetch('components/header.html').then(r => r.text()),
+            fetch('components/footer.html').then(r => r.text())
+        ]).then(([h, f]) => {
+            injectHTML(document.getElementById('site-header'), h);
+            injectHTML(document.getElementById('site-footer'), f);
+        }).catch(err => console.error('Failed to load components:', err));
+
+        // In-page subnav active state
+        document.addEventListener('DOMContentLoaded', function () {
+            const subnav = document.querySelector('.subnav');
+            if (!subnav) return;
+            const links = Array.from(subnav.querySelectorAll('.subnav-link'));
+            const getId = (href) => (href || '').split('#')[1] || '';
+
+            function setActive(id) {
+                links.forEach(a => a.classList.toggle('is-active', getId(a.getAttribute('href')) === id));
+            }
+
+            const sections = links
+                .map(a => document.getElementById(getId(a.getAttribute('href'))))
+                .filter(Boolean);
+
+            // Observer to highlight section in view
+            let lastActive = null;
+            const obs = new IntersectionObserver((entries) => {
+                // Find the section with the highest intersection ratio
+                let mostVisible = null;
+                let highestRatio = 0;
+
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && entry.intersectionRatio > highestRatio) {
+                        highestRatio = entry.intersectionRatio;
+                        mostVisible = entry.target.id;
+                    }
+                });
+
+                // Only update if we have a valid section and it's different from current
+                if (mostVisible && mostVisible !== lastActive) {
+                    lastActive = mostVisible;
+                    setActive(lastActive);
+                }
+            }, {
+                root: null,
+                threshold: [0.1, 0.3, 0.5, 0.7, 0.9],
+                rootMargin: "-80px 0px -20% 0px"
+            });
+
+            sections.forEach(sec => obs.observe(sec));
+
+            // Click behavior
+            links.forEach(a => {
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = getId(a.getAttribute('href'));
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        setActive(targetId);
+                    }
+                });
+            });
+
+            // Hash on load
+            if (location.hash) {
+                const hashId = getId(location.hash);
+                if (hashId && document.getElementById(hashId)) {
+                    setActive(hashId);
+                }
+            }
+        });
+    </script>
+    <script>
+        // Story timeline interactions: reveal on scroll, active highlight (without hash updates)
+        document.addEventListener('DOMContentLoaded', function () {
+            const steps = Array.from(document.querySelectorAll('.story-step'));
+            if (steps.length === 0) return;
+
+            function setActiveStep(id) {
+                steps.forEach(li => li.classList.toggle('is-active', li.id === id));
+                // Removed hash update to prevent interference with main subnav
+            }
+
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        setActiveStep(entry.target.id);
+                    }
+                });
+            }, { threshold: 0.6, rootMargin: "-10% 0px -30% 0px" });
+
+            steps.forEach(li => {
+                obs.observe(li);
+                li.addEventListener('focus', () => setActiveStep(li.id));
+            });
+
+            // Deep-link support for story steps only
+            if (location.hash && location.hash.startsWith('#story-')) {
+                const target = document.getElementById(location.hash.replace('#', ''));
+                if (target) {
+                    setTimeout(() => { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); target.focus({ preventScroll: true }); }, 100);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
