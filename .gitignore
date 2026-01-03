@@ -50,3 +50,4 @@ temp/
 # Build outputs
 dist/
 build/
+.claude
