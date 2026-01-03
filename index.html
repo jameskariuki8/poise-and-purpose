@@ -373,46 +373,70 @@
             }
         }
 
-        /* Hide hero image on mobile */
-        @media (max-width: 768px) {
-            .image-content {
-                display: none;
+        /* Responsive design for all devices */
+        @media (max-width: 1024px) {
+            .hero-content {
+                gap: 40px;
             }
+            
+            .hero-image {
+                height: 400px;
+            }
+        }
 
+        @media (max-width: 768px) {
             .hero-content {
                 grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
             }
-
+            
+            .image-content {
+                order: -1;
+                margin-bottom: 2rem;
+            }
+            
+            .hero-image {
+                height: 300px;
+                border-radius: 20px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            }
+            
+            .image-wrapper {
+                -webkit-mask-image: none;
+                mask-image: none;
+            }
+            
             .hero-section {
-                background-image: url('images/hero.png');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                min-height: 60vh;
-                position: relative;
+                min-height: 80vh;
+                padding: 2rem 0;
             }
-
-            .hero-section::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: linear-gradient(45deg,
-                        rgba(0, 0, 0, 0.6) 0%,
-                        rgba(138, 43, 226, 0.2) 50%,
-                        rgba(0, 0, 0, 0.6) 100%);
-                z-index: 1;
-            }
-
+            
             .hero-container {
-                position: relative;
-                z-index: 2;
+                padding: 0 20px;
             }
+        }
 
-            .video-background {
-                display: none;
+        @media (max-width: 480px) {
+            .hero-image {
+                height: 250px;
+                border-radius: 15px;
+            }
+            
+            .hero-section {
+                min-height: 70vh;
+            }
+            
+            .hero-container {
+                padding: 0 15px;
+            }
+            
+            .heading {
+                font-size: clamp(2rem, 8vw, 3rem);
+            }
+            
+            .paragraph {
+                font-size: 1rem;
             }
         }
 
