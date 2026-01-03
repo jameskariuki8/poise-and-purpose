@@ -775,66 +775,38 @@
         }
 
         /* Events Section */
-        .events-timeline {
-            max-width: 800px;
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
             margin: 0 auto;
-            position: relative;
-        }
-
-        .events-timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(to bottom, var(--primary), var(--secondary));
         }
 
         .event-card {
-            background: rgba(0, 0, 0, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            width: calc(50% - 2rem);
-            position: relative;
-            backdrop-filter: blur(5px);
+            overflow: hidden;
             transition: all 0.3s ease;
             color: #f0f0f0;
         }
 
-        .event-card:nth-child(odd) {
-            margin-left: auto;
+        .event-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
         }
 
-        .event-card:nth-child(even) {
-            margin-right: auto;
-        }
-
-        .event-card::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: var(--secondary);
-            transform: translateY(-50%);
-        }
-
-        .event-card:nth-child(odd)::before {
-            left: -40px;
-        }
-
-        .event-card:nth-child(even)::before {
-            right: -40px;
+        .event-content {
+            padding: 1.5rem;
         }
 
         .event-card:hover {
             transform: translateY(-5px);
-            box-shadow: var(--glow);
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
+            border-color: rgba(138, 43, 226, 0.5);
         }
 
         .event-date {
@@ -863,19 +835,8 @@
                 grid-template-columns: 1fr;
             }
 
-            .events-timeline::before {
-                left: 30px;
-            }
-
-            .event-card {
-                width: calc(100% - 60px);
-                margin-left: 60px !important;
-                margin-right: 0 !important;
-            }
-
-            .event-card:nth-child(odd)::before,
-            .event-card:nth-child(even)::before {
-                left: -40px;
+            .events-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             }
         }
 
@@ -1114,23 +1075,32 @@
     <section id="events" class="events">
         <div class="container">
             <h2 class="section-title">Upcoming Events</h2>
-            <div class="events-timeline">
+            <div class="events-grid">
                 <div class="event-card">
-                    <div class="event-date">June 15, 2023</div>
-                    <h3 class="event-title">Women in Tech Conference</h3>
-                    <p>Annual gathering celebrating women in technology with keynote speakers, workshops, and networking
-                        opportunities.</p>
+                    <img src="images/event1.jpeg" alt="Women in Tech Conference" class="event-image">
+                    <div class="event-content">
+                        <div class="event-date">June 15, 2023</div>
+                        <h3 class="event-title">Women in Tech Conference</h3>
+                        <p>Annual gathering celebrating women in technology with keynote speakers, workshops, and networking
+                            opportunities.</p>
+                    </div>
                 </div>
                 <div class="event-card">
-                    <div class="event-date">July 22, 2023</div>
-                    <h3 class="event-title">Leadership Bootcamp</h3>
-                    <p>Intensive weekend program focused on developing essential leadership skills for young women aged
-                        18-25.</p>
+                    <img src="images/event2.jpeg" alt="Leadership Bootcamp" class="event-image">
+                    <div class="event-content">
+                        <div class="event-date">July 22, 2023</div>
+                        <h3 class="event-title">Leadership Bootcamp</h3>
+                        <p>Intensive weekend program focused on developing essential leadership skills for young women aged
+                            18-25.</p>
+                    </div>
                 </div>
                 <div class="event-card">
-                    <div class="event-date">August 10, 2023</div>
-                    <h3 class="event-title">Community Impact Day</h3>
-                    <p>Join us as we give back to the community through various service projects and initiatives.</p>
+                    <img src="images/event3.jpeg" alt="Community Impact Day" class="event-image">
+                    <div class="event-content">
+                        <div class="event-date">August 10, 2023</div>
+                        <h3 class="event-title">Community Impact Day</h3>
+                        <p>Join us as we give back to the community through various service projects and initiatives.</p>
+                    </div>
                 </div>
             </div>
         </div>
