@@ -389,28 +389,33 @@
             }
             
             .image-content {
-                order: -1;
-                margin-bottom: 2rem;
-            }
-            
-            .hero-image {
-                height: 300px;
-                border-radius: 20px;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            }
-            
-            .image-wrapper {
-                -webkit-mask-image: none;
-                mask-image: none;
+                display: none;
             }
             
             .hero-section {
                 min-height: 80vh;
                 padding: 2rem 0;
+                background-image: url('images/home-hero-group.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            
+            .hero-section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.7);
+                z-index: 1;
             }
             
             .hero-container {
                 padding: 0 20px;
+                position: relative;
+                z-index: 2;
             }
         }
 
